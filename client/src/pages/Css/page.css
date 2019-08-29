@@ -1,0 +1,13 @@
+.bottomSlime {
+    border: solid red;
+    text-align: center;  
+}
+.h1Title {
+    text-align: center;
+}
+.homeText {
+background-color: rgb(95, 95, 95);
+border: solid 2px;
+border-radius: 4% / 50%;
+padding: 2%;
+}

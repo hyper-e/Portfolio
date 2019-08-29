@@ -1,0 +1,14 @@
+/* Css styleing for home page in app.js */
+.homePage {
+    height: 100vh;
+    background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
+    color: #00e676;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+body {
+    margin: 0;
+}

@@ -1,0 +1,50 @@
+.navBar { 
+  
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: solid 2px #00e676;
+    background-image: linear-gradient(whitesmoke, #51ff00);
+}
+.buttonLink {
+    color: navy;
+    text-decoration: none;
+    border: none;
+    border-radius: 5%;
+    background-image:  radial-gradient(#51ff00 , rgb(57, 198, 245));
+    padding: 5%;
+    text-align: center;
+}
+/* .homePageLink:active {
+    color: blue;
+} */
+.buttonLink:hover {
+    transform: scale(1.5, 1.5);
+    color: white;
+}
+.linkBox {
+    margin-right: 10%;
+    height: 95%;
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+  margin-left: 5%;
+  font-size: 35px;
+  color: grey;
+}
+.compImg {
+    height: 50px;
+}
+.seperator {
+    color: blue;
+}
