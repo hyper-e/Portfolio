@@ -1,14 +1,33 @@
 import React, { Component } from "react";
 import "./Css/page.css";
 import Links from "../components/Links";
-
+import ProjectCard from "../components/ProjectCards";
+import projects from "../projects.json";
 class Portfolio extends Component {
+
+    state = {
+        projects
+      };
+    
     render() {
         return(
-            <React.Fragment>
-            <h1>Hello</h1>
-            <Links linkBox="portLinks" />
-            </React.Fragment>
+           
+    <div className="portfolio">
+        {this.state.projects.map(projects => (  
+            <ProjectCard
+                id={projects.id}
+                key={projects.id}
+                name={projects.name}
+                image={projects.image}
+                description={projects.description}
+                github={projects.github_link}
+                heroku={projects.heroku}
+            />
+  ))}
+        <Links linkBox="port2Links" />
+</div>
+            
+            
         );
     };
 };

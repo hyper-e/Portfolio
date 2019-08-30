@@ -1,19 +1,12 @@
 /* Css styleing for home page in app.js */
 
-.homePage {
-    height: 100vh;
-    background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
-    color: #00e676;  
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    
-}
-body {
+
+html, body, #root {
+    padding: 0;
     margin: 0;
- }
+    height: 100%;
+  }
+  
 /* media queries for screen changes 
 for anything under 800px */
 

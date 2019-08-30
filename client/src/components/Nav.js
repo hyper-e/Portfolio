@@ -16,7 +16,7 @@ class Nav extends Component {
               <span className="seperator">|</span>
               <NavLink to="/portfolio" className="buttonLink"><strong>Portfolio</strong></NavLink>
               <span className="seperator">|</span>
-              <NavLink onClick={this.handleEmailClick} className="buttonLink"><strong>Contact</strong></NavLink>
+              <NavLink to="/contact" onClick={this.handleEmailClick} className="buttonLink"><strong>Contact</strong></NavLink>
           </div>
       </nav>
     );

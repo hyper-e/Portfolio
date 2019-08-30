@@ -14,8 +14,8 @@ class Links extends Component {
     render() {
         return(
             <div className={this.props.linkBox}>
-<FontAwesomeIcon onClick={this.handleGitHubclick} id={this.props.gitID} className="icons" icon={faGithubAlt} size="4x"/>
-<FontAwesomeIcon onClick={this.handleLinkedInclick} id={this.props.linkedID} className="icons" icon={faLinkedin} size="4x"/>
+<FontAwesomeIcon onClick={this.handleGitHubclick} id={this.props.gitID} className="icons" icon={faGithubAlt} size="4x" />
+<FontAwesomeIcon onClick={this.handleLinkedInclick} id={this.props.linkedID} className="icons" icon={faLinkedin} size="4x" />
 </div>
         );
     };
