@@ -1,13 +1,49 @@
-.bottomSlime {
-    border: solid red;
-    text-align: center;  
-}
+
+/* styles for the pages folder  */
 .h1Title {
     text-align: center;
 }
-.homeText {
+div.homeText {
 background-color: rgb(95, 95, 95);
 border: solid 2px;
 border-radius: 4% / 50%;
 padding: 2%;
+box-shadow: 10px 30px 60px 40px rgb(9, 255, 0);
+}
+.links {
+    border-top: solid 2px #333;
+    padding-top: 2%;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.icons:hover {
+    animation: pulse 1s infinite;
+    cursor: pointer;
+    transform: scale(1.5, 1.5);
+    color: rgb(0, 4, 255);
+}
+@keyframes pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(5, 234, 250, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 25px rgba(9, 255, 0, 0.2);
+     }
+}
+.portLinks {
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+    width: 15%;
+    border-top: solid 2px #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2%;
 }

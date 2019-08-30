@@ -7,11 +7,11 @@ class Nav extends Component {
       <nav className="navBar">
          <div className="name"><img alt="logo" className="compImg" src={require("../pages/images/computerScreen.png")} />Eduardo Reta</div>
           <div className="linkBox">
-              <NavLink to="/" className="buttonLink">HomePage</NavLink>
+              <NavLink to="/" className="buttonLink"><strong>About</strong></NavLink>
               <span className="seperator">|</span>
-              <NavLink to="/portfolio" className="buttonLink">Portfolio</NavLink>
+              <NavLink to="/portfolio" className="buttonLink"><strong>Portfolio</strong></NavLink>
               <span className="seperator">|</span>
-              <NavLink to="/contact" className="buttonLink">Contact</NavLink>
+              <NavLink to="/contact" className="buttonLink"><strong>Contact</strong></NavLink>
           </div>
       </nav>
     );
