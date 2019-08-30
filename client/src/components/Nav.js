@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./CSS/navStyle.css";
 class Nav extends Component {
+
+  handleEmailClick = () => {
+    window.location.href = 'mailto:er031991@gmail.com';
+};
+
     render(){
     return (
       <nav className="navBar">
@@ -11,7 +16,7 @@ class Nav extends Component {
               <span className="seperator">|</span>
               <NavLink to="/portfolio" className="buttonLink"><strong>Portfolio</strong></NavLink>
               <span className="seperator">|</span>
-              <NavLink to="/contact" className="buttonLink"><strong>Contact</strong></NavLink>
+              <NavLink onClick={this.handleEmailClick} className="buttonLink"><strong>Contact</strong></NavLink>
           </div>
       </nav>
     );

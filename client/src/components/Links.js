@@ -5,7 +5,7 @@ import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 class Links extends Component {
 
     handleGitHubclick = () => {
-        window.location.href = 'https://github.com/hyper-e';
+        window.location.href = "https://github.com/hyper-e";
     };
     handleLinkedInclick = () => {
         window.location.href = "https://www.linkedin.com/in/eduardo-reta-936130181/"
