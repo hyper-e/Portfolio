@@ -2,19 +2,23 @@ import React, { Component } from "react";
 import "./CSS/cardStyle.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from "@fortawesome/free-brands-svg-icons";
-
+import images from "./images/crystalball.png";
 class ProjectCard extends Component {
     // constructor(props) {
     //     super(props);
     // };
     // handleGitLink = () => {
-    //     window.location.href = this.props.github
+    //     // window.location.href = this.props.github
+    //     import image from (this.props.image);
     // };
+  
     render() {
+    
+     
         return(
             <div className="card">
       <div className="img-container">
-        <img alt={this.props.name} src={this.props.image} />
+        <img src="" alt={this.props.name} />
       </div>
       <div className="content">
         <ul>

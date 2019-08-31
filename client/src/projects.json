@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Psychic Game",
-        "image": "none",
+        "image": "./images/crystalball.png",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/Psychic-Game.git"
     },

@@ -14,6 +14,7 @@ class Portfolio extends Component {
            
     <div className="portfolio">
         {this.state.projects.map(projects => (  
+           
             <ProjectCard
                 id={projects.id}
                 key={projects.id}
@@ -23,6 +24,7 @@ class Portfolio extends Component {
                 github={projects.github_link}
                 heroku={projects.heroku}
             />
+            
   ))}
         <Links linkBox="port2Links" />
 </div>
