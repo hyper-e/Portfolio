@@ -2,56 +2,56 @@
     {
         "id": 1,
         "name": "Psychic Game",
-        "image": "./images/crystalball.png",
+        "image": "CrystalBall",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/Psychic-Game.git"
     },
     {
         "id": 2,
         "name": "Crystal Collector Game",
-        "image": "none",
+        "image": "Crystals",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/unit-4-game.git"
     },
     {
         "id": 3,
         "name": "GifTastic",
-        "image": "none",
+        "image": "Gifs",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/GifTastic.git"
     },
     {
         "id": 4,
         "name": "MarchMadness",
-        "image": "none",
+        "image": "NCAA",
         "heroku_link": "none",
         "github_link": "https://github.com/janiello/March-Madness-Draft.git"
     },
     {
         "id": 5,
         "name": "Clicky Game",
-        "image": "none",
+        "image": "Click",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/Clicky-Game.git"
     },
     {
         "id": 6,
         "name": "Pet-Book",
-        "image": "none",
+        "image": "Dog",
         "heroku_link": "none",
         "github_link": "https://github.com/ryverine/pet-book.git"
     },
     {
         "id": 7,
         "name": "FriendFinder",
-        "image": "none",
+        "image": "Loop",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/FriendFinder.git"
     },
     {
         "id": 8,
         "name": "BeAmazon",
-        "image": "none",
+        "image": "Box",
         "heroku_link": "none",
         "github_link": "https://github.com/hyper-e/bAmazon.git"
     }

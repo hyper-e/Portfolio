@@ -13,6 +13,7 @@ class Portfolio extends Component {
         return(
            
     <div className="portfolio">
+        <div className="cards">
         {this.state.projects.map(projects => (  
            
             <ProjectCard
@@ -26,6 +27,7 @@ class Portfolio extends Component {
             />
             
   ))}
+  </div>
         <Links linkBox="port2Links" />
 </div>
             

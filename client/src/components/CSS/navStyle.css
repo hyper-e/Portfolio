@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     border-bottom: solid 2px #00e676;
     background-color: #333;
+    z-index: 10;
 }
 .buttonLink {
     color: rgb(90, 12, 236);
