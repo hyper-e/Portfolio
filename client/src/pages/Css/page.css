@@ -1,5 +1,6 @@
 
 /* styles for the pages folder  */
+/* about pages css */
 .homePage {
     height: 100vh;
     background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
@@ -31,6 +32,36 @@ div.homeText {
         justify-content: space-evenly;
         padding-top: 2%;
     }
+.links {
+        border-top: solid 2px;
+        padding-top: 2%;
+        position: absolute;
+        bottom: 15%;
+        left: 40%;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .icons:hover {
+        animation: pulse 1s infinite;
+        cursor: pointer;
+        transform: scale(1.5, 1.5);
+        color: rgb(0, 4, 255);
+    }
+    @keyframes pulse
+    {
+         0% {
+              box-shadow: 0 0 0 0px rgba(5, 234, 250, 0.2);
+         }
+         100% {
+              box-shadow: 0 0 0 25px rgba(9, 255, 0, 0.2);
+         }
+    }
+    
+
+    /* portfolio page css */
+
 .portfolio {
     background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
     color: #00e676;  
@@ -58,32 +89,9 @@ div.homeText {
     padding-top: 1%;
     padding-bottom: 3%;  
 }
-.links {
-    border-top: solid 2px;
-    padding-top: 2%;
-    position: absolute;
-    bottom: 15%;
-    left: 40%;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.icons:hover {
-    animation: pulse 1s infinite;
-    cursor: pointer;
-    transform: scale(1.5, 1.5);
-    color: rgb(0, 4, 255);
-}
-@keyframes pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(5, 234, 250, 0.2);
-     }
-     100% {
-          box-shadow: 0 0 0 25px rgba(9, 255, 0, 0.2);
-     }
-}
+
+
+/* contact page css */
 
 .contactPage {
     height: 100vh;
