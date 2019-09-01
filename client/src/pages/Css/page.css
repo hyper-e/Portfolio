@@ -127,3 +127,8 @@ div.homeText {
     flex-wrap: wrap;
     align-content: center;
 }
+@supports (-ms-ime-align: auto) {
+    .links { justify-content: space-around; }
+    .port2Links { justify-content: space-around;}
+    .contactLinks { justify-content: space-around;}
+    }
