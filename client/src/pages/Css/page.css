@@ -30,7 +30,7 @@ padding: 2%;
 box-shadow: 10px 30px 60px 40px rgb(9, 255, 0);
 }
 .links {
-    border-top: solid 2px #333;
+    border-top: solid 2px;
     padding-top: 2%;
     position: absolute;
     bottom: 15%;
@@ -65,4 +65,43 @@ box-shadow: 10px 30px 60px 40px rgb(9, 255, 0);
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 2%;
+}
+.contactPage {
+    /* background-color: blue;
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center; */
+    height: 100vh;
+    background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
+    color: #00e676;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.mailImage {
+    margin-top: 10%;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.mailPic  {
+    height: 100%;
+}
+.contactLinks {
+    border-top: solid 2px;
+    color: #00e676;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    padding-top: 2%;
+}
+.emailMessage {
+    text-align: center;
+    color: rgb(0, 38, 255);
 }
