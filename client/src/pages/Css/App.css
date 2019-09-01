@@ -18,13 +18,19 @@ for anything under 800px */
     .navBar{
         justify-content: space-around;
     }
+    .buttonLink:hover {
+        transform: none;
+        color: blue;
+        animation: none;
+        font-size: 28px;
+    }
 }
 /* media queries for screen changes 
 for anything under 800px */
 @media screen and (max-width: 600px) {
     .homePage{
         flex-flow: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         font-size: 12px;
     }
     .linkBox {

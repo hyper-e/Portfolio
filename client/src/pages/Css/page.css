@@ -101,7 +101,7 @@ div.homeText {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
 }
 .mailImage {
     margin-top: 10%;
@@ -120,6 +120,7 @@ div.homeText {
     justify-content: space-evenly;
     margin-top: 3%;
     padding-top: 2%;
+    width: 45%;
 }
 .emailMessage {
     text-align: center;
