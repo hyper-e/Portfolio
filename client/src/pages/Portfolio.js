@@ -23,7 +23,7 @@ class Portfolio extends Component {
                 image={projects.image}
                 description={projects.description}
                 github={projects.github_link}
-                heroku={projects.heroku}
+                link={projects.link}
             />
             
   ))}

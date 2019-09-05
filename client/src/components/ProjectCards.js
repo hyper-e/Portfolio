@@ -67,9 +67,9 @@ class ProjectCard extends Component {
           </li>
           <li>
             <button className="herokuButton" onClick={(link) => {
-                link = this.props.heroku_link
+                link = this.props.link
                 window.location.href = link
-            }}>Heroku Link</button>
+            }}>Website Link</button>
           </li>
           <li>
            <button className="githubButton" onClick={(link) => {

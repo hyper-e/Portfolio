@@ -3,56 +3,57 @@
         "id": 1,
         "name": "Psychic Game",
         "image": "CrystalBall",
-        "heroku_link": "none",
+        "description": "A game where you try to guess what letter is the chosen one.",
+        "link": "https://hyper-e.github.io/Psychic-Game/",
         "github_link": "https://github.com/hyper-e/Psychic-Game.git"
     },
     {
         "id": 2,
         "name": "Crystal Collector Game",
         "image": "Crystals",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/hyper-e/unit-4-game.git"
     },
     {
         "id": 3,
         "name": "GifTastic",
         "image": "Gifs",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/hyper-e/GifTastic.git"
     },
     {
         "id": 4,
         "name": "MarchMadness",
         "image": "NCAA",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/janiello/March-Madness-Draft.git"
     },
     {
         "id": 5,
         "name": "Clicky Game",
         "image": "Click",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/hyper-e/Clicky-Game.git"
     },
     {
         "id": 6,
         "name": "Pet-Book",
         "image": "Dog",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/ryverine/pet-book.git"
     },
     {
         "id": 7,
         "name": "FriendFinder",
         "image": "Loop",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/hyper-e/FriendFinder.git"
     },
     {
         "id": 8,
         "name": "BeAmazon",
         "image": "Box",
-        "heroku_link": "none",
+        "link": "none",
         "github_link": "https://github.com/hyper-e/bAmazon.git"
     }
 ]
