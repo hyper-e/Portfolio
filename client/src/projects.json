@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Psychic Game",
         "image": "CrystalBall",
-        "description": "A game where you try to guess what letter is the chosen one.",
+        "description": "A game where you try to guess what letter is the chosen one to earn points.",
         "link": "https://hyper-e.github.io/Psychic-Game/",
         "github_link": "https://github.com/hyper-e/Psychic-Game.git"
     },
@@ -11,13 +11,15 @@
         "id": 2,
         "name": "Crystal Collector Game",
         "image": "Crystals",
-        "link": "none",
+        "description": "Small game where you try to add up some points to match the target score.",
+        "link": "https://hyper-e.github.io/Crystal-game/",
         "github_link": "https://github.com/hyper-e/unit-4-game.git"
     },
     {
         "id": 3,
         "name": "GifTastic",
         "image": "Gifs",
+        "description": "Do you enjoy looking at cars. This site will displays GIFS of the cars you look up.",
         "link": "none",
         "github_link": "https://github.com/hyper-e/GifTastic.git"
     },

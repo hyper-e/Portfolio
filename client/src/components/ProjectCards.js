@@ -48,9 +48,11 @@ class ProjectCard extends Component {
           this.setState({image: Box});
         };
     };
-  
-    render() {
     
+    render() {
+      const titleStyle = {
+        color: "gold",
+      };
      
         return(
             <div className="card">
@@ -60,21 +62,21 @@ class ProjectCard extends Component {
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {this.props.name}
+            <strong style={titleStyle}>Project:</strong> {this.props.name}
           </li>
           <li>
-              <strong>Description:</strong> {this.props.description}
+              <strong style={titleStyle}>Description:</strong> {this.props.description}
           </li>
           <li>
             <button className="herokuButton" onClick={(link) => {
                 link = this.props.link
-                window.location.href = link
+                window.open(link, "_blank");
             }}>Website Link</button>
           </li>
           <li>
            <button className="githubButton" onClick={(link) => {
                link = this.props.github
-               window.location.href = link}} >
+               window.open(link, "_blank");}} >
                    <FontAwesomeIcon icon={faGithub} size="2x"/></button>
           </li>
         </ul>
