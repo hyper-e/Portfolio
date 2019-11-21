@@ -69,6 +69,7 @@ div.homeText {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    height: -webkit-fill-available;
 }
 .cards {
     height: 100%;
