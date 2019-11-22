@@ -10,7 +10,9 @@ class Contact extends Component {
                 <div className="mailImage"><img src={Mail} alt="Mail" className="mailPic" /></div>
                 <h2 className="emailMessage">Click the <strong>Contact</strong> link up top 
                 <br />
-                to get in touch! 
+                to get in touch!
+                <br/> 
+                Email: er031991@gmail.com
                 </h2>
                 <Links linkBox="contactLinks" />
             </div>

@@ -32,21 +32,21 @@ class ProjectCard extends Component {
         if (this.props.image === "Gifs") {
           this.setState({image: Gif});
         };
-        if (this.props.image === "NCAA") {
-          this.setState({image: MarchMadness});
-        };
-        if (this.props.image === "Click") {
-          this.setState({image: Click});
-        };
-        if (this.props.image === "Dog") {
-          this.setState({image: Dog});
-        };
-        if (this.props.image === "Loop") {
-          this.setState({image: Loop});
-        };
-        if (this.props.image === "Box") {
-          this.setState({image: Box});
-        };
+        // if (this.props.image === "NCAA") {
+        //   this.setState({image: MarchMadness});
+        // };
+        // if (this.props.image === "Click") {
+        //   this.setState({image: Click});
+        // };
+        // if (this.props.image === "Dog") {
+        //   this.setState({image: Dog});
+        // };
+        // if (this.props.image === "Loop") {
+        //   this.setState({image: Loop});
+        // };
+        // if (this.props.image === "Box") {
+        //   this.setState({image: Box});
+        // };
     };
     
     render() {
@@ -66,6 +66,9 @@ class ProjectCard extends Component {
           </li>
           <li>
               <strong style={titleStyle}>Description:</strong> {this.props.description}
+          </li>
+          <li>
+          <strong style={titleStyle}>Technologies:</strong> {this.props.technologies}
           </li>
           <li>
             <button className="herokuButton" onClick={(link) => {
