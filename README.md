@@ -14,7 +14,9 @@ There is also links at the bottom once again that can lead to checking out the l
 
 Clicking the contact button will prompt you into sending an email right to me. 
 Dont be alarm you dont have too if you dont want to but, its there.
-In case the email does show here it is once more just for you er031991@gmail.com 
+In case the email does show here it is once more just for you dev.eddie.reta@gmail.com
+
+This site was created using React.js 
 
 Thank You for checking out my page and have a blessed day.
     
