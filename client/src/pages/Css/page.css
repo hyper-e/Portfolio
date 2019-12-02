@@ -6,21 +6,51 @@
     background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
     color: #00e676;  
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column;
+}
+#info {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.standOut {
+    color: rgb(9, 255, 0);
+}
+#aboutMe{
+    color: white;
+    text-indent: 5%;
+line-height: 1.6;
+
+}
+#skill {
+
+    color: yellow;
+    display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: space-around;
 }
 .h1Title {
     text-align: center;
 }
 div.homeText {
+    width: 85%;
     background-color: rgb(95, 95, 95);
     border: solid 2px;
     border-radius: 4% / 50%;
     padding: 2%;
     box-shadow: 10px 30px 60px 40px rgb(9, 255, 0);
     }
+div.homeText1 {
+        width: 75%;
+        height: fit-content;
+        background-color: rgb(95, 95, 95);
+        border: solid 2px;
+        border-radius: 4% / 50%;
+        padding: 2%;
+        box-shadow: 10px 30px 60px 40px rgb(9, 255, 0);
+        } 
 .portLinks {
         position: absolute;
         bottom: 10%;
@@ -34,19 +64,16 @@ div.homeText {
     }
 .links {
         border-top: solid 2px;
-        padding-top: 2%;
-        position: absolute;
-        bottom: 15%;
-        left: 40%;
         width: 20%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        color: yellow;
     }
     .icons:hover {
         animation: pulse 1s infinite;
         cursor: pointer;
-        transform: scale(1.5, 1.5);
+        transform: scale(1.2, 1.2);
         color: rgb(0, 4, 255);
     }
     @keyframes pulse
@@ -89,6 +116,7 @@ div.homeText {
     margin-top: 1%;
     padding-top: 1%;
     padding-bottom: 3%;  
+    color: yellow;
 }
 
 
@@ -116,7 +144,7 @@ div.homeText {
 }
 .contactLinks {
     border-top: solid 2px;
-    color: #00e676;
+    color: yellow;
     display: flex;
     justify-content: space-evenly;
     margin-top: 3%;

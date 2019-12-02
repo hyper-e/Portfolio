@@ -5,8 +5,8 @@
         "image": "CrystalBall",
         "description": "A game where you try to guess what letter is the chosen one to earn points.",
         "technologies": "HTML, Javascript, CSS, NODE, GIT BASH",
-        "link": "https://hyper-e.github.io/Psychic-Game/",
-        "github_link": "https://github.com/hyper-e/Psychic-Game.git"
+        "link": "https://eddie-reta.github.io/Psychic-Game/",
+        "github_link": "https://github.com/Eddie-Reta/Psychic-Game"
     },
     {
         "id": 2,
@@ -14,8 +14,8 @@
         "image": "Crystals",
         "description": "Small game where you try to add up some points to match the target score.",
         "technologies": "HTML, Javascript, JQUERY, CSS, NODE, GIT BASH",
-        "link": "https://hyper-e.github.io/Crystal-game/",
-        "github_link": "https://github.com/hyper-e/unit-4-game.git"
+        "link": "https://eddie-reta.github.io/Crystal-game/",
+        "github_link": "https://github.com/Eddie-Reta/Crystal-game"
     },
     {
         "id": 3,
@@ -23,7 +23,7 @@
         "image": "Gifs",
         "description": "Do you enjoy looking at cars. This site will displays GIFS of the cars you look up.",
         "technologies": "HTML, Javascript, JQUERY, CSS, NODE, GIT BASH, API",
-        "link": "none",
-        "github_link": "https://github.com/hyper-e/GifTastic.git"
+        "link": "https://eddie-reta.github.io/GifTastic/",
+        "github_link": "https://github.com/Eddie-Reta/GifTastic"
     }
 ]

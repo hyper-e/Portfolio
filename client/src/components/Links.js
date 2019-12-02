@@ -5,7 +5,7 @@ import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 class Links extends Component {
 
     handleGitHubclick = () => {
-        window.open("https://github.com/hyper-e", "_blank");
+        window.open("https://github.com/Eddie-Reta", "_blank");
     };
     handleLinkedInclick = () => {
         window.open("https://www.linkedin.com/in/eduardo-reta-936130181/", "_blank");

@@ -5,11 +5,11 @@ import { faGithub} from "@fortawesome/free-brands-svg-icons";
 import CrystalBall from "./images/crystalball.png";
 import Crystals from "./images/crystals.png";
 import Gif from "./images/gifs.gif";
-import MarchMadness from "./images/ncaa.jpg";
-import Click from "./images/click.png";
-import Dog from "./images/dog.jpg";
-import Loop from "./images/loop.png";
-import Box from "./images/box.jpg";
+// import MarchMadness from "./images/ncaa.jpg";
+// import Click from "./images/click.png";
+// import Dog from "./images/dog.jpg";
+// import Loop from "./images/loop.png";
+// import Box from "./images/box.jpg";
 
 class ProjectCard extends Component {
     constructor(props) {

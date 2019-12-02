@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch }  from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Portfolio from "./pages/Portfolio";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
 import Contact from "./pages/Contact";
 import "./pages/Css/App.css";
 
@@ -12,7 +11,7 @@ class App extends Component {
         return(
                 <Router>
                
-                        <Nav />
+                        
                     <Switch>
                     <Route exact path={"/"} component={HomePage} />
                     <Route exact path={"/portfolio"} component={Portfolio} />

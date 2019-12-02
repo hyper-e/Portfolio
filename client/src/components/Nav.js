@@ -4,7 +4,7 @@ import "./CSS/navStyle.css";
 class Nav extends Component {
 
   handleEmailClick = () => {
-    window.location.href = 'mailto:er031991@gmail.com';
+    window.location.href = 'mailto:dev.eddie.reta@gmail.com';
 };
 
     render(){
