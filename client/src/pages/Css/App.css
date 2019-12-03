@@ -32,7 +32,7 @@ for anything under 800px */
      .homePage{
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: 12px;
        
     }
@@ -44,7 +44,7 @@ for anything under 800px */
         width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border: none;
   margin: 0;
         
@@ -73,6 +73,7 @@ for anything under 800px */
         height: 3vh;
         width: 13vw;
         text-align: center;
+        font-size: 75%;
     }
     .buttonLink:hover {
         transform: none;
@@ -95,13 +96,23 @@ for anything under 800px */
     width: 100%;
        display: flex;
         flex-flow: column;
-        margin: none;
+       
    }
    .port2Links {
        width: 100%
    }
    .navBarFix{
        position: relative;
+   }
+   .cards {
+       border: none;
+       padding: 0;
+   }
+   .portfolio {
+       align-items: unset;
+   }
+   .emailLink {
+       font-size: unset;
    }
    }
    
