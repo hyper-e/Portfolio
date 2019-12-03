@@ -114,5 +114,8 @@ for anything under 800px */
    .emailLink {
        font-size: unset;
    }
+   #info {
+       justify-content: unset;
+   }
    }
    
