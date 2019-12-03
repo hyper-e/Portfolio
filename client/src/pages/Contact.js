@@ -14,7 +14,7 @@ class Contact extends Component {
                 <br />
                 to get in touch!
                 <br/> 
-                Email: dev.eddie.reta@gmail.com
+                Email: <span className="emailLink">dev.eddie.reta@gmail.com</span>
 
                 </h2>
                 <Links linkBox="contactLinks" />

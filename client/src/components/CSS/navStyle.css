@@ -22,7 +22,7 @@
 }
 
 .buttonLink:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.15, 1.15);
     color: blue;
     animation: pulse 0.7s infinite;
     font-size: 28px;
@@ -60,6 +60,5 @@
 }
 .navBarFix {
     width: 100%;
-    position: fixed;
-    top: 0;
+    
 }

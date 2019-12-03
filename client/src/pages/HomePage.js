@@ -14,7 +14,6 @@ class HomePage extends Component {
                 <div id="info">
                     <div className="homeText">
                         <h1 className="h1Title">About Me</h1>
-                        <br />
                         <h3 id="aboutMe">
                       <p>Welcome my name is <span className="standOut">Eduardo Reta Jr</span>. I currently live and work in the triangle area. I'm still working in
 
@@ -34,18 +33,19 @@ class HomePage extends Component {
                     <div className="homeText1">
                         <h1 className="h1Title">SKILLS</h1>
                         <h3>
-                            <ul id="skill">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JAVASCRIPT</li>
-                                <li>JQUERY</li>
-                                <li>React.js</li>
-                                <li>MongoDB</li>
-                                <li>Bootstrap</li>
-                                <li>Node.js</li>
-                                <li>Heroku</li>
-                                <li>Git/GitHub</li>
-                                <li>RESTful API's</li>
+                            <ul>
+
+                                <li className="skill">HTML</li>
+                                <li className="skill">CSS</li>
+                                <li className="skill">JAVASCRIPT</li>
+                                <li className="skill">JQUERY</li>
+                                <li className="skill">React.js</li>
+                                <li className="skill">MongoDB</li>
+                                <li className="skill">Bootstrap</li>
+                                <li className="skill">Node.js</li>
+                                <li className="skill">Heroku</li>
+                                <li className="skill">Git/GitHub</li>
+                                <li className="skill">RESTful API's</li>
                             </ul>
                         </h3>
                     </div>

@@ -28,45 +28,80 @@ for anything under 800px */
 /* media queries for screen changes 
 for anything under 800px */
 @media screen and (max-width: 600px) {
-    .homePage{
+    
+     .homePage{
+        display: flex;
         flex-flow: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         font-size: 12px;
+       
+    }
+    .links {
+        width: 100%;
+        position: relative;
     }
     .linkBox {
-        height: fit-content;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+  margin: 0;
         
-    }
-    .navBar {
-        height: fit-content;
-        flex-flow: column;
-        position: relative;
-        font-size: 12px;
-         }
-    div.homeText{
+    }  
+    
+     div.homeText{
         box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+        margin: none;
+        border: none;
+        padding: 0;
+    }
+    div.homeText1 {
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        padding: 0;
+    }
+    .h1Title {
+      width: 100%; 
+       
     }
     .buttonLink {
-        width: 100%;
-        border: solid 4px #333;
-        border-style: solid;
-        border-width: 4px 0 4px 0;
+        height: 3vh;
+        width: 13vw;
+        text-align: center;
+    }
+    .buttonLink:hover {
+        transform: none;
+        font-size: 100%;
     }
     .seperator {
         display: none;
     }
-    .links {
-        position: unset;
-        width: auto;
-    }
     .name {
-        font-size: 18px;
-        margin: auto;
-        color: rgb(38, 222, 247);
+        display: none;
+        
     }
-  
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;;
+    }
+   .navBar {
+    width: 100%;
+       display: flex;
+        flex-flow: column;
+        margin: none;
+   }
+   .port2Links {
+       width: 100%
+   }
+   .navBarFix{
+       position: relative;
+   }
    }
    
