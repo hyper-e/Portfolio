@@ -25,5 +25,14 @@
         "technologies": "HTML, Javascript, JQUERY, CSS, NODE, GIT BASH, API",
         "link": "https://eddie-reta.github.io/GifTastic/",
         "github_link": "https://github.com/Eddie-Reta/GifTastic"
+    },
+    {
+        "id": 3,
+        "name": "DiceGame",
+        "image": "Dice",
+        "description": "PIG(Dice Game) Two player game to reach 100 points first. Raise your bet!!",
+        "technologies": "HTML, Javascript, CSS, NODE, GIT BASH,",
+        "link": "https://eddie-reta.github.io/DiceGame/",
+        "github_link": "https://github.com/Eddie-Reta/DiceGame"
     }
 ]
