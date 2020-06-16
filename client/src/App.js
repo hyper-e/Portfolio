@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Portfolio from "./pages/Portfolio";
 import NoMatch from "./pages/NoMatch";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume"
 import "./pages/Css/App.css";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
                     <Route exact path={"/"} component={HomePage} />
                     <Route exact path={"/portfolio"} component={Portfolio} />
                     <Route exact path={"/contact"} component={Contact} />
+                    <Route exact path={"/resume"} component={Resume} />
                     <Route component={ NoMatch } />
                     </Switch>
                   

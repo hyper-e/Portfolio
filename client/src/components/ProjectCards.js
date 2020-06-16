@@ -6,10 +6,7 @@ import CrystalBall from "./images/crystalball.png";
 import Crystals from "./images/crystals.png";
 import Gif from "./images/gifs.gif";
 import Dice from "./images/dice.jpg";
-// import Click from "./images/click.png";
-// import Dog from "./images/dog.jpg";
-// import Loop from "./images/loop.png";
-// import Box from "./images/box.jpg";
+
 
 class ProjectCard extends Component {
     constructor(props) {
@@ -22,7 +19,7 @@ class ProjectCard extends Component {
     }
     handleGitLink = () => {
         // window.location.href = this.props.github
-        console.log(this.props.image)
+        // console.log(this.props.image)
         if (this.props.image === "CrystalBall") {
           this.setState({image: CrystalBall});
         };

@@ -6,6 +6,8 @@
     color: #00e676;  
     display: flex;
     flex-flow: column;
+    
+    background-color: black;
 }
 #info {
     height: 100%;
@@ -95,10 +97,13 @@ div.homeText1 {
     /* portfolio page css */
 
 .portfolio {
+    height: 100%;
     color: #00e676;  
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+    background-color: black;
     
 }
 .cards {

@@ -15,7 +15,12 @@ class HomePage extends Component {
                     <div className="homeText">
                         <h1 className="h1Title">About Me</h1>
                         <h3 id="aboutMe">
-                      <p>Welcome my name is <span className="standOut">Eduardo Reta Jr</span>. I currently live and work in the triangle area. I'm still working in
+                            <p>
+                                Hi my name is Eduardo Reta. I am a recent grduate from the UNC Full Stack Web Developer Boot Camp and am eager to begin 
+                                exploring web development opportunities. I have a passion for building front and back end web applications, this can be showcased via my portfolio.
+                            </p>
+
+                      {/* <p>Welcome my name is <span className="standOut">Eduardo Reta Jr</span>. I currently live and work in the triangle area. I'm still working in
 
                         the construction industry as a heavy equipment operater. Another role I have performed was a leadership role as a supervisor.
                         
@@ -27,7 +32,7 @@ class HomePage extends Component {
 
                         I graduated in August 2019 from the program. The boot camp was a 24-week program which focused on gaining technical programming and market-driven skills.
 
-                        Now a <span className="standOut">Full Stack Web Developer </span> seeking for an oppurtinity to put my newly developed skill into your company and my growth of knowledge.</p>
+                        Now a <span className="standOut">Full Stack Web Developer </span> seeking for an oppurtinity to put my newly developed skill into your company and my growth of knowledge.</p> */}
                         </h3>
                     </div>
                     <div className="homeText1">
