@@ -14,7 +14,7 @@ class HomePage extends Component {
                 <div id="info">
                     <div className="homeText">
                         <h1 className="h1Title">About Me</h1>
-                        <h3 id="aboutMe">
+                        <div id="aboutMe">
                             <p>
                                 Hi my name is Eduardo Reta. I am a recent grduate from the UNC Full Stack Web Developer Boot Camp and am eager to begin 
                                 exploring web development opportunities. I have a passion for building front and back end web applications, this can be showcased via my portfolio.
@@ -33,7 +33,7 @@ class HomePage extends Component {
                         I graduated in August 2019 from the program. The boot camp was a 24-week program which focused on gaining technical programming and market-driven skills.
 
                         Now a <span className="standOut">Full Stack Web Developer </span> seeking for an oppurtinity to put my newly developed skill into your company and my growth of knowledge.</p> */}
-                        </h3>
+                        </div>
                     </div>
                     <div className="homeText1">
                         <h1 className="h1Title">SKILLS</h1>
