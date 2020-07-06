@@ -6,7 +6,7 @@
     color: #00e676;  
     display: flex;
     flex-flow: column;
-    background-image: url(../images/codeDemo.PNG);
+    background-image: url(../images/code.jpg);
     background-size: cover;
 }
 #info {
@@ -42,16 +42,17 @@ ul {
     text-align: center;
 }
 div.homeText {
-    width: 85%;
-    background-color: rgb(95, 95, 95);
+    width: 60%;
+    background-color: black;
     border: solid 2px;
     padding: 2%;
     box-shadow: 0px 3px 10px 3px rgb(9, 255, 0);
+    margin-top: 5%;
     }
 div.homeText1 {
-        width: 75%;
+        width: 50%;
         height: fit-content;
-        background-color: rgb(95, 95, 95);
+        background-color: black;
         border: solid 2px;
         padding: 2%;
         box-shadow: 0px 3px 10px 3px rgb(9, 255, 0);
@@ -73,13 +74,13 @@ div.homeText1 {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        color: black;
+        color: rgb(9, 255, 0);
     }
     .icons:hover {
         animation: pulse 1s infinite;
         cursor: pointer;
         transform: scale(1.2, 1.2);
-        color: rgb(0, 4, 255);
+        color: silver;
     }
     @keyframes pulse
     {
@@ -101,7 +102,8 @@ div.homeText1 {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-image: url(../images/code.jpg);
+    background-size: cover;
     
 }
 .cards {
@@ -122,17 +124,19 @@ div.homeText1 {
     align-items: center;
     border-top: 2px solid;
     width: 40%;
-    margin-top: 3%;
+    margin-top: 5%;
     padding-top: 1%;
     padding-bottom: 3%;  
-    color: black;
+    color: rgb(9, 255, 0);
 }
 
 /* contact page css */
 
 .contactPage {
     height: 100vh;
-    background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
+    /* background-image: linear-gradient(to left, grey, rgb(57, 198, 245)); */
+    background-color: black;
+    background-size: cover;
     color: #00e676;  
     display: flex;
     flex-direction: column;
@@ -151,7 +155,7 @@ div.homeText1 {
 }
 .contactLinks {
     border-top: solid 2px;
-    color: yellow;
+    color: rgb(9, 255, 0);
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 3%;
@@ -160,10 +164,12 @@ div.homeText1 {
 }
 .emailMessage {
     text-align: center;
-    color: rgb(0, 38, 255);
+    color: paleturquoise;
+    background-color: black;
+    font-size: 3.5vh;
 }
 .emailLink {
-    color: yellow;
+    color: #00e676;
     font-size: 140%;
     font-family: monospace;
 }
@@ -173,7 +179,14 @@ div.homeText1 {
     color: #00e676;  
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
+    font-size: 3.5vh;
+}
+.resumePage {
+    height: 100%;
+    background-image: url(../images/code.jpg);
+    background-size: cover;
 }
 @supports (-ms-ime-align: auto) {
     .links { justify-content: space-around; }

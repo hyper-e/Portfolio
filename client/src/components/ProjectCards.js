@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./CSS/cardStyle.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from "@fortawesome/free-brands-svg-icons";
-import CrystalBall from "./images/crystalball.png";
-import Crystals from "./images/crystals.png";
+import CrystalBall from "./images/crystalBallImg.png";
+import Crystals from "./images/crystalImg.png";
 import Gif from "./images/gifs.gif";
 import Dice from "./images/dice.jpg";
 

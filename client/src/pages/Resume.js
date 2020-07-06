@@ -16,7 +16,11 @@ import "../components/CSS/navStyle.css";
 class Resume extends Component {
     render() {
          return (
-             <h1></h1>
+             
+          <div className="resumePage">
+            <Nav />
+
+          </div>
 //         //     <div className="resumePage" style={{height: "100%", width:"100%"}}>
 //         //         <Iframe src="../pages/pdf/Resume2.0.pdf"
 //         // width="450px"

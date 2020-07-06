@@ -9,14 +9,14 @@ class Contact extends Component {
             
             <div className="contactPage">    
             <div className="navBarFix"><Nav /></div>           
-                <div className="mailImage"><img src={Mail} alt="Mail" className="mailPic" /></div>
-                <h2 className="emailMessage">Click the <strong>Contact</strong> link up top 
+                {/* <div className="mailImage"><img src={Mail} alt="Mail" className="mailPic" /></div> */}
+                <div className="emailMessage">Click the <strong>Contact</strong> link up top 
                 <br />
                 to get in touch!
                 <br/> 
                 Email: <span className="emailLink">dev.eddie.reta@gmail.com</span>
 
-                </h2>
+                </div>
                 <Links linkBox="contactLinks" />
             </div>
         );

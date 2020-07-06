@@ -16,7 +16,7 @@ class HomePage extends Component {
                         <h1 className="h1Title">About Me</h1>
                         <div id="aboutMe">
                             <p>
-                                Hi my name is Eduardo Reta. I am a recent grduate from the UNC Full Stack Web Developer Boot Camp and am eager to begin 
+                                Hi my name is Eduardo Reta. I am a recent graduate from the UNC Full Stack Web Developer Boot Camp and I am eager to begin 
                                 exploring web development opportunities. I have a passion for building front and back end web applications, this can be showcased via my portfolio.
                             </p>
 
@@ -37,7 +37,6 @@ class HomePage extends Component {
                     </div>
                     <div className="homeText1">
                         <h1 className="h1Title">SKILLS</h1>
-                        <h3>
                             <ul>
 
                                 <li className="skill">HTML</li>
@@ -52,7 +51,6 @@ class HomePage extends Component {
                                 <li className="skill">Git/GitHub</li>
                                 <li className="skill">RESTful API's</li>
                             </ul>
-                        </h3>
                     </div>
 
                     <Links linkBox="links" />
