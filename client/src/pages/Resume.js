@@ -5,41 +5,35 @@ import Nav from "../components/Nav";
 import "../components/CSS/navStyle.css";
 // import jsPDF from "jspdf";
 // import Iframe from "react-iframe";
-// import { Document, Page } from "react-pdf";
-// import pdf from "./pdf/Resume2.0.pdf"
+ import { Document,Page } from "react-pdf";
+import renderPDF from "./pdf/Resume2.0.pdf"
+import { pdfjs } from 'react-pdf';
 
 
 
 
-
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends Component {
+
     render() {
          return (
              
           <div className="resumePage">
             <Nav />
 
+          <div className="resumePDF">
+
+            {/* //Using reactPDF to display pdf resume on screen */}
+
+          <Document file={ renderPDF } className="pdF">
+                <Page pageNumber={ 1 } renderAnnotationLayer={ 0 } height={ 1000 } />
+            </Document>
           </div>
-//         //     <div className="resumePage" style={{height: "100%", width:"100%"}}>
-//         //         <Iframe src="../pages/pdf/Resume2.0.pdf"
-//         // width="450px"
-//         // height="450px"
-//         // id="myId"
-//         // className="myClassname"
-//         // display="initial"
-//         // position="relative"/>
 
-//         //     </div>
+          <Links linkBox='links' />
 
-//         <Document file={pdf}>
-//             <Page pageNumber={1} />
-//         </Document>
-//     //   <p>Page {pageNumber} of {numPages}</p>
-        
-// //         <iframe src="./pdf/Resume2.0.pdf" title="title">
-// //      Presss me: <a href="./resources/crayola.pdf">Download PDF</a>
-// // </iframe>
+          </div>
       )
    };
  };

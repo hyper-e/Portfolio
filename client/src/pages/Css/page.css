@@ -187,7 +187,21 @@ div.homeText1 {
     height: 100%;
     background-image: url(../images/code.jpg);
     background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
+.resumePDF {
+margin-top: 6%;
+overflow: auto;
+height: 80%;
+}
+.resLinks {
+    color: rgb(9, 255, 0);
+}
+
+
 @supports (-ms-ime-align: auto) {
     .links { justify-content: space-around; }
     .port2Links { justify-content: space-around;}
