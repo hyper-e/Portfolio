@@ -12,9 +12,11 @@
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.5.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "jspdf": "^1.5.3",
+    "react-bootstrap": "^1.2.2",
     "react-iframe": "^1.8.0",
     "react-pdf": "^4.1.0",
     "routes": "^2.1.0"

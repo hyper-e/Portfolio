@@ -2,7 +2,6 @@
 /* styles for the pages folder  */
 /* about pages css */
 .homePage {
-    height: 100vh;
     color: #00e676;  
     display: flex;
     flex-flow: column;
@@ -96,7 +95,6 @@ div.homeText1 {
     /* portfolio page css */
 
 .portfolio {
-    height: 100%;
     color: #00e676;  
     display: flex;
     flex-flow: column;
@@ -166,12 +164,12 @@ div.homeText1 {
     text-align: center;
     color: paleturquoise;
     background-color: black;
-    font-size: 3.5vh;
+    
 }
 .emailLink {
     color: #00e676;
-    font-size: 140%;
     font-family: monospace;
+    font-size: x-large;
 }
 .noMatch {
     height: 100vh;

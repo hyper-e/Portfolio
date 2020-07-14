@@ -10,7 +10,7 @@ html, body, #root {
 /* media queries for screen changes 
 for anything under 800px */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .links{
      position: absolute;
      bottom: 0;
@@ -27,7 +27,7 @@ for anything under 800px */
 }
 /* media queries for screen changes 
 for anything under 800px */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     
      .homePage{
         display: flex;
@@ -35,8 +35,8 @@ for anything under 800px */
         justify-content: space-between;
         font-size: 12px;
        
-    }
-    .links {
+    } */
+    /* .links {
         width: 100%;
         position: relative;
     }
@@ -117,5 +117,5 @@ for anything under 800px */
    #info {
        justify-content: unset;
    }
-   }
+   } */ 
    
