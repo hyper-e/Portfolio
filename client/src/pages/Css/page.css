@@ -2,10 +2,12 @@
 /* styles for the pages folder  */
 /* about pages css */
 .homePage {
+    height: 100vh;
     color: #00e676;  
     display: flex;
     flex-flow: column;
-    background-image: url(../images/code.jpg);
+    background-color: #30475E;
+    /* background-image: url(../images/code.jpg); */
     background-size: cover;
 }
 #info {

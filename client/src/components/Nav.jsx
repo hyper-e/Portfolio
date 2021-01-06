@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./CSS/navStyle.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import NavSocialLinks from "./NavSocialLinks";
 import Button from "react-bootstrap/Button";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
@@ -28,20 +29,19 @@ class Nav extends Component {
       {this.state.matches && (
         <nav>
          <div className="navBar">
-           <div className="name">Eduardo Reta</div>
            <div className="linkBox">
              <NavLink to="/" className="buttonLink">
                About
              </NavLink>
-             <span className="seperator">|</span>
+             
              <NavLink to="/portfolio" className="buttonLink">
                Portfolio
              </NavLink>
-             <span className="seperator">|</span>
+             
              <NavLink to="/resume" className="buttonLink">
                Resume
              </NavLink>
-             <span className="seperator">|</span>
+            
              <NavLink
               to="/contact"
               className="buttonLink"
@@ -49,6 +49,7 @@ class Nav extends Component {
               Contact
             </NavLink>
           </div>
+          <NavSocialLinks NSL="nsl" iconStyle="navSocialLinks" />
         </div>
         </nav>
       )}
