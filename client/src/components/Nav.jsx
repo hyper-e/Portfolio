@@ -3,11 +3,10 @@ import { NavLink } from "react-router-dom";
 import "./CSS/navStyle.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import NavSocialLinks from "./NavSocialLinks";
-import Button from "react-bootstrap/Button";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Navbar from "react-bootstrap/Navbar";
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
+
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -30,24 +29,21 @@ class Nav extends Component {
         <nav>
          <div className="navBar">
            <div className="linkBox">
-             <NavLink to="/" className="buttonLink">
+             <Link to="about" className="buttonLink" smooth={true} delay={400} duration={700}>
                About
-             </NavLink>
+             </Link>
              
-             <NavLink to="/portfolio" className="buttonLink">
+             <Link to="portfolio" className="buttonLink" smooth={true} delay={400} duration={700}>
                Portfolio
-             </NavLink>
+             </Link>
              
-             <NavLink to="/resume" className="buttonLink">
+             <Link to="resume" className="buttonLink" smooth={true} delay={400} duration={700}>
                Resume
-             </NavLink>
+             </Link>
             
-             <NavLink
-              to="/contact"
-              className="buttonLink"
-            >
+             <Link to="contact" className="buttonLink" smooth={true} delay={400} duration={700}>
               Contact
-            </NavLink>
+            </Link>
           </div>
           <NavSocialLinks NSL="nsl" iconStyle="navSocialLinks" />
         </div>

@@ -1,209 +1,242 @@
-
 /* styles for the pages folder  */
-/* about pages css */
+/* intro pages css */
+
+#intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introImg {
+  height: 68%;
+  width: 22%;
+}
+.introDescription {
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introPara {
+  font-family: "Roboto Slab", serif;
+  color: #e8e8e8;
+  font-size: 30px;
+}
+#h_1 {
+  height: 15%;
+  text-align: center;
+}
+#h_2 {
+  height: 15%;
+  text-align: center;
+}
+#h_3 {
+  height: 15%;
+  text-align: center;
+}
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* About page styles. */
 .homePage {
-    height: 100vh;
-    color: #00e676;  
-    display: flex;
-    flex-flow: column;
-    background-color: #30475E;
-    /* background-image: url(../images/code.jpg); */
-    background-size: cover;
-}
-#info {
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.standOut {
-    color: rgb(9, 255, 0);
-}
-#aboutMe{
-    color: white;
-    text-indent: 5%;
-line-height: 1.6;
-
-}
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
- .skill {
-
-    color: yellow;
-    text-align: center;
-    padding: 1%;
-    list-style: none;
-} 
-.h1Title {
-    text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background-image: linear-gradient(to right, #ca3e47, #222831 ,#30475e);
+  color: #30475e;
 }
 div.homeText {
-    width: 60%;
-    background-color: black;
-    border: solid 2px;
-    padding: 2%;
-    box-shadow: 0px 3px 10px 3px rgb(9, 255, 0);
-    margin-top: 5%;
-    }
+  width: 60%;
+  background-color: #e8e8e8;
+  padding: 2%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+#aboutMe {
+  color: #222831;
+  text-indent: 5%;
+  line-height: 1.6;
+}
 div.homeText1 {
-        width: 50%;
-        height: fit-content;
-        background-color: black;
-        border: solid 2px;
-        padding: 2%;
-        box-shadow: 0px 3px 10px 3px rgb(9, 255, 0);
-        } 
+  width: 50%;
+  height: min-content;
+  background-color: #e8e8e8;
+  padding: 2%;
+  border-radius: 10px;
+}
+#info {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.standOut {
+  color: rgb(9, 255, 0);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skill {
+  color: #222831;
+  text-align: center;
+  padding: 1%;
+  list-style: none;
+}
+.h1Title {
+  text-align: center;
+}
 .portLinks {
-        position: absolute;
-        bottom: 10%;
-        left: 43%;
-        width: 15%;
-        border-top: solid 2px #333;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-top: 2%;
-    }
+  position: absolute;
+  bottom: 10%;
+  left: 43%;
+  width: 15%;
+  border-top: solid 2px #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
 .links {
-        border-top: solid 2px;
-        width: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        color: rgb(9, 255, 0);
-    }
-    .icons:hover {
-        animation: pulse 1s infinite;
-        cursor: pointer;
-        transform: scale(1.2, 1.2);
-        color: silver;
-    }
-    @keyframes pulse
-    {
-         0% {
-              box-shadow: 0 0 0 0px rgba(5, 234, 250, 0.2);
-         }
-         100% {
-              box-shadow: 0 0 0 25px rgba(9, 255, 0, 0.2);
-         }
-    }
-    
+  border-top: solid 2px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: rgb(9, 255, 0);
+}
+.icons:hover {
+  animation: pulse 1s infinite;
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  color: silver;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(5, 234, 250, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(9, 255, 0, 0.2);
+  }
+}
 
-    /* portfolio page css */
+/* portfolio page css */
 
 .portfolio {
-    color: #00e676;  
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../images/code.jpg);
-    background-size: cover;
-    
+  color: #00e676;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/code.jpg);
+  background-size: cover;
 }
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5%;
-    justify-content: center;
-    background-color: rgb(95, 95, 95);
-    border: solid 2px;
-    padding: 2%;
-    box-shadow: 0px 3px 60px 3px rgb(9, 255, 0);
-      
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  justify-content: center;
+  background-color: rgb(95, 95, 95);
+  border: solid 2px;
+  padding: 2%;
+  box-shadow: 0px 3px 60px 3px rgb(9, 255, 0);
 }
 .port2Links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 2px solid;
-    width: 40%;
-    margin-top: 5%;
-    padding-top: 1%;
-    padding-bottom: 3%;  
-    color: rgb(9, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid;
+  width: 40%;
+  margin-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  color: rgb(9, 255, 0);
 }
 
 /* contact page css */
 
-.contactPage {
-    height: 100vh;
-    /* background-image: linear-gradient(to left, grey, rgb(57, 198, 245)); */
-    background-color: black;
-    background-size: cover;
-    color: #00e676;  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.contact {
+  height: 100vh;
+  /* background-image: linear-gradient(to left, grey, rgb(57, 198, 245)); */
+  background-color: black;
+  background-size: cover;
+  color: #00e676;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .mailImage {
-    margin-top: 5%;
-    height: 40%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
+  margin-top: 5%;
+  height: 40%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
-.mailPic  {
-    height: 100%;
+.mailPic {
+  height: 100%;
 }
 .contactLinks {
-    border-top: solid 2px;
-    color: rgb(9, 255, 0);
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 3%;
-    padding-top: 2%;
-    width: 45%;
+  border-top: solid 2px;
+  color: rgb(9, 255, 0);
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+  padding-top: 2%;
+  width: 45%;
 }
 .emailMessage {
-    text-align: center;
-    color: paleturquoise;
-    background-color: black;
-    
+  text-align: center;
+  color: paleturquoise;
+  background-color: black;
 }
 .emailLink {
-    color: #00e676;
-    font-family: monospace;
-    font-size: x-large;
+  color: #00e676;
+  font-family: monospace;
+  font-size: x-large;
 }
 .noMatch {
-    height: 100vh;
-    background-image: linear-gradient(to left, grey, rgb(57, 198, 245));
-    color: #00e676;  
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5vh;
+  height: 100vh;
+  background-image: linear-gradient(to left, #30475e, #222831);
+  color: #ca3e47;
+}
+.errorMessage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .resumePage {
-    height: 100%;
-    background-image: url(../images/code.jpg);
-    background-size: cover;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  background-image: url(../images/code.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 .resumePDF {
-margin-top: 6%;
-overflow: auto;
-height: 80%;
+  margin-top: 6%;
+  overflow: auto;
+  height: 80%;
 }
 .resLinks {
-    color: rgb(9, 255, 0);
+  color: rgb(9, 255, 0);
 }
 
-
 @supports (-ms-ime-align: auto) {
-    .links { justify-content: space-around; }
-    .port2Links { justify-content: space-around;}
-    .contactLinks { justify-content: space-around;}
-    }
+  .links {
+    justify-content: space-around;
+  }
+  .port2Links {
+    justify-content: space-around;
+  }
+  .contactLinks {
+    justify-content: space-around;
+  }
+}

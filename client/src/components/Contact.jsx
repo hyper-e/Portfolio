@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import "./Css/page.css";
-import Links from "../components/Links";
-import Mail from "./images/mail.png"
-import Nav from "../components/Nav";
+import Links from "./Links";
+import Nav from "./Nav";
 class Contact extends Component {
    
     handleEmailClick = () => {
@@ -12,7 +10,7 @@ class Contact extends Component {
     render() {
         return(
             
-            <div className="contactPage">    
+            <div className="contact">    
             <div className="navBarFix"><Nav /></div>           
                 {/* <div className="mailImage"><img src={Mail} alt="Mail" className="mailPic" /></div> */}
                 <div className="emailMessage">Click my <strong>Email</strong> 

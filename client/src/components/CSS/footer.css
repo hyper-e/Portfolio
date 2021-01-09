@@ -1,0 +1,40 @@
+#footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: #222832;
+  background-color: #e8e8e8;
+}
+
+.footerLinks {
+    height: 100%;
+   width: 10%;
+    display: flex;
+    position: absolute;
+    left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.socialFooterLinks {
+    height: 50%;
+    width: 100%;
+    color: #30475E;
+    display: inherit;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-left: 7%;
+}
+.socialFooterLinks:hover{
+    transform: scale(1.5, 1.5);
+}
+
+.scrollUp {
+    position: absolute;
+    right: 10%;
+    margin-top: 0.3%;
+    border: 1px solid #CA3E47;
+    border-radius: 6px;
+}

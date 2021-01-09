@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import "./Css/page.css";
-import Links from "../components/Links";
-import Nav from "../components/Nav";
+import Nav from "./Nav";
 import "../components/CSS/navStyle.css"
-// import { faGit } from "@fortawesome/free-brands-svg-icons";
+
 class HomePage extends Component {
 
     render() {
         return (
 
-            <div className="homePage">
+            <div id="about" className="homePage">
                 <Nav />
                 <div id="info">
                     <div className="homeText">
@@ -52,8 +50,6 @@ class HomePage extends Component {
                                 <li className="skill">RESTful API's</li>
                             </ul>
                     </div>
-
-                    <Links linkBox="links" />
                 </div>
             </div>
         );

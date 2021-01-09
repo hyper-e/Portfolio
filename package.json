@@ -19,6 +19,7 @@
     "react-bootstrap": "^1.2.2",
     "react-iframe": "^1.8.0",
     "react-pdf": "^4.1.0",
+    "react-scroll": "^1.8.1",
     "routes": "^2.1.0"
   },
   "scripts": {

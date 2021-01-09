@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import "./Css/page.css";
-import Links from "../components/Links";
-import ProjectCard from "../components/ProjectCards";
+import Links from "./Links";
+import ProjectCard from "./ProjectCards";
 import projects from "../projects.json";
-import Nav from "../components/Nav";
+import Nav from "./Nav";
 class Portfolio extends Component {
 
     state = {
@@ -13,7 +12,7 @@ class Portfolio extends Component {
     render() {
         return (
 
-            <div className="portfolio">
+            <div id="portfolio2" className="portfolio">
                 <div className="navBarFix"><Nav /></div>
                 <div className="cards">
                     {this.state.projects.map(projects => (
