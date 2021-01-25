@@ -13,7 +13,6 @@ class Portfolio extends Component {
         return (
 
             <div id="portfolio2" className="portfolio">
-                <div className="navBarFix"><Nav /></div>
                 <div className="cards">
                     {this.state.projects.map(projects => (
 
@@ -30,7 +29,6 @@ class Portfolio extends Component {
 
                     ))}
                 </div>
-                <Links linkBox="port2Links" />
             </div>
 
 

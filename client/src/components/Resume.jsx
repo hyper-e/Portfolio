@@ -19,7 +19,7 @@ class Resume extends Component {
             {/* //Using reactPDF to display pdf resume on screen */}
 
           <Document file={ renderPDF } className="pdF">
-                <Page pageNumber={ 1 } renderAnnotationLayer={ 0 } height={ 1000 } />
+                <Page pageNumber={ 1 } height={ 1000 } />
             </Document>
           </div>
 

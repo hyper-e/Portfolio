@@ -48,7 +48,7 @@ class ProjectCard extends Component {
     
     render() {
       const titleStyle = {
-        color: "gold",
+        color: "#222731",
       };
      
         return(

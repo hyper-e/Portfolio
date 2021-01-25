@@ -25,10 +25,14 @@
   font-family: "Roboto Slab", serif;
   color: #e8e8e8;
   font-size: 30px;
+  opacity: 1;
+  transition: visibility 5s linear 0s, opacity 300ms;
+  text-align: center;
 }
 #h_1 {
   height: 15%;
   text-align: center;
+  
 }
 #h_2 {
   height: 15%;
@@ -44,7 +48,8 @@
   height: 100vh;
   display: flex;
   flex-flow: column;
-  background-image: linear-gradient(to right, #ca3e47, #222831 ,#30475e);
+  background-color: #30475e;
+  /* background-image: linear-gradient(to right, #ca3e47, #222831 ,#30475e); */
   color: #30475e;
 }
 div.homeText {
@@ -125,46 +130,28 @@ ul {
 }
 
 /* portfolio page css */
-
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .portfolio {
-  color: #00e676;
+  height: 100vh;
+  background-color: #30475e;
   display: flex;
-  flex-flow: column;
-  align-items: center;
   justify-content: center;
-  background-image: url(../images/code.jpg);
-  background-size: cover;
+  align-items: center;
 }
 .cards {
+  height:100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
   justify-content: center;
-  background-color: rgb(95, 95, 95);
-  border: solid 2px;
-  padding: 2%;
-  box-shadow: 0px 3px 60px 3px rgb(9, 255, 0);
-}
-.port2Links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  border-top: 2px solid;
-  width: 40%;
-  margin-top: 5%;
-  padding-top: 1%;
-  padding-bottom: 3%;
-  color: rgb(9, 255, 0);
 }
 
 /* contact page css */
-
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .contact {
   height: 100vh;
   /* background-image: linear-gradient(to left, grey, rgb(57, 198, 245)); */
-  background-color: black;
-  background-size: cover;
+  background-color: inherit;
   color: #00e676;
   display: flex;
   flex-direction: column;
@@ -183,22 +170,30 @@ ul {
 }
 .contactLinks {
   border-top: solid 2px;
-  color: rgb(9, 255, 0);
+  color: #e8e8e8;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3%;
   padding-top: 2%;
   width: 45%;
 }
+.centerEmail {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .emailMessage {
   text-align: center;
-  color: paleturquoise;
-  background-color: black;
+  color: #e8e8e8;
 }
 .emailLink {
-  color: #00e676;
+  color: #ca3e47;
   font-family: monospace;
   font-size: x-large;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .noMatch {
   height: 100vh;
@@ -211,19 +206,26 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.resumePage {
-  height: 100%;
-  background-image: url(../images/code.jpg);
-  background-size: cover;
+
+/*  Resume  */
+/*//////////////////////////////////////////////////////////////////////////////////*/
+.resume {
+ height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  background-color: inherit;
 }
 .resumePDF {
-  margin-top: 6%;
+  height: 100%;
   overflow: auto;
-  height: 80%;
+  /* margin-top: 6%;
+  overflow: auto;
+  height: 80%; */
+}
+.pdf {
+  height: 90%;
 }
 .resLinks {
   color: rgb(9, 255, 0);
