@@ -33,7 +33,7 @@ include links to the projects github.
   
 # My GitHub
 
-  (https://github.com/Eddie-Reta)[https://github.com/Eddie-Reta]
+  [https://github.com/Eddie-Reta](https://github.com/Eddie-Reta)
 
 # License
 
