@@ -1,35 +1,28 @@
 [
     {
         "id": 1,
-        "name": "Psychic Game",
-        "image": "CrystalBall",
-        "description": "A game where you try to guess what letter is the chosen one to earn points.",
-        "technologies": "HTML, Javascript, CSS, NODE, GIT BASH",
-        "link": "https://eddie-reta.github.io/Psychic-Game/",
-        "github_link": "https://github.com/Eddie-Reta/Psychic-Game"
+        "name": "Note Stack",
+        "image": "NodeStack",
+        "imageCredit": "<span>Photo by <a href='https://unsplash.com/@freegraphictoday?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>AbsolutVision</a> on <a href='https://unsplash.com/s/photos/note?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span>",
+        "description": "Simple site to keep notes on your desktop.",
+        "technologies": "React, HTML, Javascript, CSS, NODE, GIT BASH",
+        "link": "https://eddie-reta.github.io/Note_Stack/",
+        "github_link": "https://github.com/Eddie-Reta/Note_Stack"
     },
     {
         "id": 2,
-        "name": "Crystal Collector Game",
-        "image": "Crystals",
-        "description": "Small game where you try to add up some points to match the target score.",
-        "technologies": "HTML, Javascript, JQUERY, CSS, NODE, GIT BASH",
-        "link": "https://eddie-reta.github.io/Crystal-game/",
-        "github_link": "https://github.com/Eddie-Reta/Crystal-game"
+        "name": "Liri",
+        "image": "Liri",
+        "imageCredit": "<span>Photo by <a href='https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Markus Spiske</a> on <a href='https://unsplash.com/s/photos/javascript?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span>",
+        "description": "LIRI will be a command line node app that takes in parameters and gives you back data.",
+        "technologies": "Javascript, NODE, GIT BASH",
+        "github_link": "https://github.com/Eddie-Reta/liri-node-app"
     },
     {
         "id": 3,
-        "name": "GifTastic",
-        "image": "Gifs",
-        "description": "Do you enjoy looking at cars. This site will displays GIFS of the cars you look up.",
-        "technologies": "HTML, Javascript, JQUERY, CSS, NODE, GIT BASH, API",
-        "link": "https://eddie-reta.github.io/GifTastic/",
-        "github_link": "https://github.com/Eddie-Reta/GifTastic"
-    },
-    {
-        "id": 4,
         "name": "DiceGame",
         "image": "Dice",
+        "imageCredit": "Dice",
         "description": "PIG(Dice Game) Two player game to reach 100 points first. Raise your bet!!",
         "technologies": "HTML, Javascript, CSS, NODE, GIT BASH,",
         "link": "https://eddie-reta.github.io/DiceGame/",

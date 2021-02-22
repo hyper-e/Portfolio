@@ -81,7 +81,7 @@ div.homeText1 {
 .standOut {
   color: rgb(9, 255, 0);
 }
-ul {
+.homeText1 > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

@@ -32,6 +32,9 @@
   
   .card > .content > ul {
     list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
   
   .card > .content > ul > li {
