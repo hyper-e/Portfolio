@@ -24,7 +24,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <div >
+      <div id="deskNav">
       {this.state.matches && (
         <nav>
          <div className="navBar">

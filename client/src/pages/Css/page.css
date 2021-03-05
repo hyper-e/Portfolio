@@ -8,10 +8,10 @@
   align-items: center;
 }
 
-.introImg {
+/* .introImg {
   height: 68%;
   width: 22%;
-}
+} */
 .introDescription {
   height: 100vh;
   padding: 5%;
@@ -211,11 +211,11 @@ div.homeText1 {
 /*//////////////////////////////////////////////////////////////////////////////////*/
 .resume {
  height: 100vh;
-  display: flex;
+  /* display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: inherit;
+  background-color: inherit; */
 }
 .resumePDF {
   height: 100%;

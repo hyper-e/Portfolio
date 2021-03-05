@@ -1,12 +1,13 @@
 /* Css styleing for home page in app.js */
 
 
-html, body, #root {
+/* html, body, #root {
     padding: 0;
     margin: 0;
     height: 100%;
-  }
+  } */
   
+
 /* media queries for screen changes 
 for anything under 800px */
 
@@ -27,6 +28,56 @@ for anything under 800px */
 }
 /* media queries for screen changes 
 for anything under 800px */
+
+@media screen and (max-width: 800px) {
+    
+    /* Navbar */
+
+    #deskNav {
+        display: none;
+    }
+
+    /* Intro section*/
+
+    #intro {       
+        flex-flow: column-reverse;
+        align-items: unset!important;
+    }
+
+    .introImg {
+        margin: 0% 5% 30% 5%;
+    }
+    .introPara > span {
+        font-size: 55%;
+    }
+    /* About section */
+    .homeText {
+        width: unset;
+        margin: 5%;
+    }
+    #info > .homeText1 {
+        width: unset;
+        margin: 5%;
+    }
+    .homeText1 > ul {
+        justify-content: space-between;
+        padding: 0;
+    }
+    /* portfolio */
+    .cards > .card {
+        display: none;
+    }
+    /* resume section */
+    .resume {
+        display: none;
+    }
+    /* contact */
+    .contactLinks {
+        margin-bottom: 15%;
+    }
+}
+
+
 /* @media screen and (max-width: 600px) {
     
      .homePage{

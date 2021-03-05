@@ -35,7 +35,7 @@ componentWillUnmount() {
     render(){
         return(
             <div id="intro">
-            <img className="intoImg" src={Image}  alt="EduardoReta" />
+            <img className="introImg" src={Image}  alt="EduardoReta" />
             <div className="introDescription">
             <div id="h_1" style={{visibility: this.state.h_1}} className="introPara" ><span>Hi, I'm Eduardo.</span></div>
             <div id="h_2" style={{visibility: this.state.h_2}} className="introPara"><span>A Full Stack web developer in the triangle area.</span></div>

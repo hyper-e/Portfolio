@@ -8,6 +8,7 @@ import Intro from "../components/Intro";
 import Footer from "../components/Footer";
 import Resume from "../components/Resume";
 import Contact from "../components/Contact";
+import "../pages/Css/App.css"
 
 
 class Home extends Component {
