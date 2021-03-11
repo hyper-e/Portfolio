@@ -45,7 +45,7 @@
 /* ////////////////////////////////////////////////////////////////////////////// */
 /* About page styles. */
 .homePage {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column;
   background-color: #30475e;

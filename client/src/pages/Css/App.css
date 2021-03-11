@@ -37,6 +37,27 @@ for anything under 800px */
         display: none;
     }
 
+    /* #mobileNav {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    } */
+    #mobNav {
+        background-color: #ca3e47;
+        height: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 50;
+        position: fixed;
+        top: 0;
+    }
+    .MuiButton-label {
+        color: white;
+    }
     /* Intro section*/
 
     #intro {       
@@ -52,12 +73,16 @@ for anything under 800px */
     }
     /* About section */
     .homeText {
-        width: unset;
+        width: unset!important;
         margin: 5%;
+    }
+    #info {
+        height: 100vh!important;
     }
     #info > .homeText1 {
         width: unset;
         margin: 5%;
+        justify-content: space-evenly;
     }
     .homeText1 > ul {
         justify-content: space-between;
@@ -73,9 +98,11 @@ for anything under 800px */
     }
     /* contact */
     .contactLinks {
-        margin-bottom: 15%;
+        margin-bottom: 20%!important;
     }
+    
 }
+
 
 
 /* @media screen and (max-width: 600px) {

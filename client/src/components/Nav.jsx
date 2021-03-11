@@ -13,10 +13,10 @@ class Nav extends Component {
     this.state = { matches: window.matchMedia("(min-width: 800px)").matches};
   }
 
-  componentDidMount() {
-    const handler = e => this.setState({matches: e.matches});
-    window.matchMedia("(min-width: 800px)").addListener(handler);
-  }
+  // componentDidMount() {
+  //   const handler = e => this.setState({matches: e.matches});
+  //   window.matchMedia("(min-width: 800px)").addListener(handler);
+  // }
 
   // handlePageLink = () => {
   //   this.setState
@@ -49,7 +49,7 @@ class Nav extends Component {
         </div>
         </nav>
       )}
-      {!this.state.matches && (
+      {/* {!this.state.matches && (
          <nav className="navTwo">
             <div className="collapseNav">
               <div><h3 className="navTwoName">Eduardo Reta</h3></div>
@@ -67,7 +67,7 @@ class Nav extends Component {
               </Dropdown>
             </div>
             </nav>
-      )}
+      )} */}
       </div>
     );
   }
