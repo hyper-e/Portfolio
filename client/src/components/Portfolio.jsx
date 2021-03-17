@@ -1,13 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Links from "./Links";
 import ProjectCard from "./ProjectCards";
 import projects from "../projects.json";
 import Nav from "./Nav";
+
+
+
+
 class Portfolio extends Component {
 
     state = {
         projects
     };
+
 
     render() {
         return (
@@ -36,4 +41,43 @@ class Portfolio extends Component {
     };
 };
 
-export default Portfolio;
+function MobilePortfolio () {
+    
+    const [card, setCard] = useState(0);
+    const cardDisplay = [];
+    projects.map(project => (
+        cardDisplay.push(
+        <ProjectCard
+            id={project.id}
+            key={project.id}
+            name={project.name}
+            image={project.image}
+            description={project.description}
+            technologies={project.technologies}
+            github={project.github_link}
+            link={project.link}
+        />
+    )));
+    
+    const leftClick = () => {
+        setCard(card - 1);
+        console.log(card)
+    };
+    const rightClick = () => {
+        setCard(card + 1);
+    }
+   
+    const dispLayCard = () => {
+
+    };
+
+    return (
+        <div id="portfolioCarousel">
+            
+            <div onClick={leftClick} style={{color: "white"}}>left</div>
+            <div onClick={rightClick} style={{color: "white"}}>right</div>
+        </div>
+    );
+};
+
+export { Portfolio, MobilePortfolio };

@@ -3,7 +3,7 @@ import "./Css/page.css";
 import Nav from "../components/Nav";
 import "../components/CSS/navStyle.css";
 import About from "../components/About";
-import Portfolio from "../components/Portfolio";
+import { Portfolio, MobilePortfolio } from "../components/Portfolio";
 import Intro from "../components/Intro";
 import Footer from "../components/Footer";
 import Resume from "../components/Resume";
@@ -11,6 +11,7 @@ import Contact from "../components/Contact";
 import "../pages/Css/App.css";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MobileNav from "../components/MobileNav";
+
 
 function SimpleMediaQuery() {
   const matches = useMediaQuery('(max-width:800px)');
@@ -24,7 +25,7 @@ function Home() {
                     {SimpleMediaQuery() ? <MobileNav /> : <Nav />}
                         <Intro />
                         <About />
-                        <Portfolio />
+                    {SimpleMediaQuery() ? <MobilePortfolio /> : <Portfolio />}
                         <Resume />
                         <Contact />
                         <Footer />
