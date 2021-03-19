@@ -1,9 +1,8 @@
 import React, { Component, useState } from "react";
-import Links from "./Links";
 import ProjectCard from "./ProjectCards";
 import projects from "../projects.json";
-import Nav from "./Nav";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -60,22 +59,32 @@ function MobilePortfolio () {
     )));
     
     const leftClick = () => {
-        setCard(card - 1);
-        console.log(card)
+      const len =  cardDisplay.length - 1;
+       if (card === 0 ){
+           setCard(len)
+       } else {
+           setCard(card - 1)
+        }
+        // setCard(card - 1);
+        // console.log(card)
     };
     const rightClick = () => {
-        setCard(card + 1);
+        const len =  cardDisplay.length - 1;
+        //setCard(card + 1);
+        if (card >= len) {
+            setCard(0)
+        } else {
+            setCard(card + 1);
+        }
     }
-   
-    const dispLayCard = () => {
-
-    };
-
+  
     return (
         <div id="portfolioCarousel">
-            
-            <div onClick={leftClick} style={{color: "white"}}>left</div>
-            <div onClick={rightClick} style={{color: "white"}}>right</div>
+              {cardDisplay[card]}
+              <div className="portfolioLR">
+              <div onClick={leftClick} style={{color: "white"}}><FontAwesomeIcon icon={faChevronCircleLeft} size="3x" /></div>
+            <div onClick={rightClick} style={{color: "white"}}><FontAwesomeIcon icon={faChevronCircleRight} size="3x" /></div>
+              </div>
         </div>
     );
 };

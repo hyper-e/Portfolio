@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Links from "./Links";
-import Nav from "./Nav";
+
 class Contact extends Component {
    
     handleEmailClick = () => {

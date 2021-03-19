@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Menu, MenuItem, Popper, makeStyles, Fade } from "@material-ui/core";
+import { Button, Menu, MenuItem, Popper, makeStyles, Fade, ClickAwayListener} from "@material-ui/core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -27,26 +27,31 @@ const useStyles = makeStyles((theme) => ({
 
 function MobileNav() {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(false);
+
 
   const handleClick = (event) => {
-    setAnchorEl(anchorEl ? null : event.currentTarget);
+    setAnchorEl(anchorEl ? false : event.currentTarget);
   };
   const open = Boolean(anchorEl);
   const id = open ? 'transitions-popper' : undefined;
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchorEl(false)
   };
 
   return (
     <div id="mobNav">
+       <ClickAwayListener onClickAway={handleClose}>
       <Button
         size="large"
+        variant="outlined"
+        color="secondary"
         aria-describedby={id} type="button" onClick={handleClick}
       >
       Menu
       </Button>
+      </ClickAwayListener>
       <Popper id={id} open={open} anchorEl={anchorEl} transition>
       {({ TransitionProps }) => (
           <Fade {...TransitionProps} timeout={350}>
@@ -64,9 +69,8 @@ function MobileNav() {
           </Link>
         </MenuItem>
         <MenuItem>
-          {" "}
           <Link
-            to="portfolio"
+            to="portfolioCarousel"
             className="buttonLink"
             smooth={true}
             delay={400}
@@ -97,7 +101,7 @@ function MobileNav() {
             duration={700}
             onClick={handleClose}
           >
-          <FontAwesomeIcon icon={faChevronUp} size="2x" />
+          Top-<FontAwesomeIcon icon={faChevronUp} size="2x" />
           </Link>
         </MenuItem>
             </div>
@@ -160,6 +164,7 @@ function MobileNav() {
           </Link>
         </MenuItem>
       </Menu> */}
+
       </Popper>
     </div>
   );
