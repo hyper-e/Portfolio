@@ -32,18 +32,6 @@ class ProjectCard extends Component {
     if (this.props.image === "Dice") {
       this.setState({ image: Dice });
     }
-    // if (this.props.image === "Click") {
-    //   this.setState({image: Click});
-    // };
-    // if (this.props.image === "Dog") {
-    //   this.setState({image: Dog});
-    // };
-    // if (this.props.image === "Loop") {
-    //   this.setState({image: Loop});
-    // };
-    // if (this.props.image === "Box") {
-    //   this.setState({image: Box});
-    // };
   };
 
   missingLink = () => {

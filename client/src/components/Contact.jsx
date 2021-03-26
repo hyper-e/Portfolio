@@ -11,7 +11,6 @@ class Contact extends Component {
         return(
             
             <div className="contact">
-                {/* <div className="mailImage"><img src={Mail} alt="Mail" className="mailPic" /></div> */}
                 <div className="centerEmail">
                 <div className="emailMessage">Click my  <strong>Email</strong> 
                 <br />

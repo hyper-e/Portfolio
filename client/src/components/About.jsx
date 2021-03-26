@@ -7,8 +7,6 @@ class HomePage extends Component {
     render() {
         return (
 
-            <div id="about" className="homePage">
-                <Nav />
                 <div id="info">
                     <div className="homeText">
                         <h1 className="h1Title">About Me</h1>
@@ -51,7 +49,7 @@ class HomePage extends Component {
                             </ul>
                     </div>
                 </div>
-            </div>
+            
         );
     };
 };

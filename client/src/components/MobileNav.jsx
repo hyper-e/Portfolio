@@ -1,21 +1,11 @@
 import React, { useState } from "react";
-import { Button, Menu, MenuItem, Popper, makeStyles, Fade, ClickAwayListener} from "@material-ui/core";
+import { Button, MenuItem, Popper, makeStyles, Fade, ClickAwayListener} from "@material-ui/core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
+  Link
 } from "react-scroll";
-// function handleClick() {
-//   console.log("button")
-// }
-// function handleClose() {
-//   console.log("close");
-// }
+
 const useStyles = makeStyles((theme) => ({
   paper: {
     border: '1px solid',
@@ -58,7 +48,7 @@ function MobileNav() {
             <div className={classes.paper}>
             <MenuItem>
           <Link
-            to="about"
+            to="info"
             className="buttonLink"
             smooth={true}
             delay={400}
@@ -107,64 +97,6 @@ function MobileNav() {
             </div>
           </Fade>
         )}
-      {/* <Menu
-        id="fade-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem>
-          <Link
-            to="about"
-            className="buttonLink"
-            smooth={true}
-            delay={400}
-            duration={700}
-            onClick={handleClose}
-          >
-            About
-          </Link>
-        </MenuItem>
-        <MenuItem>
-          {" "}
-          <Link
-            to="portfolio"
-            className="buttonLink"
-            smooth={true}
-            delay={400}
-            duration={700}
-            onClick={handleClose}
-          >
-            Portfolio
-          </Link>
-        </MenuItem>
-        <MenuItem>
-          <Link
-            to="contact"
-            className="buttonLink"
-            smooth={true}
-            delay={400}
-            duration={700}
-            onClick={handleClose}
-          >
-            Contact
-          </Link>
-        </MenuItem>
-        <MenuItem>
-        <Link
-            to="intro"
-            className="buttonLink"
-            smooth={true}
-            delay={400}
-            duration={700}
-            onClick={handleClose}
-          >
-          <FontAwesomeIcon icon={faChevronUp} size="2x" />
-          </Link>
-        </MenuItem>
-      </Menu> */}
-
       </Popper>
     </div>
   );

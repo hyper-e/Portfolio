@@ -1,4 +1,4 @@
-import React, {Component, useEffect} from "react";
+import React, {Component} from "react";
 import Image from "./images/gifs.gif";
 
 class Intro extends Component {
