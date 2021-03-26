@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, MenuItem, Popper, makeStyles, Fade, ClickAwayListener} from "@material-ui/core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import {
   Link
 } from "react-scroll";
@@ -9,8 +9,9 @@ import {
 const useStyles = makeStyles((theme) => ({
   paper: {
     border: '1px solid',
-    padding: theme.spacing(1),
+    padding: theme.spacing(0.5),
     backgroundColor: theme.palette.background.paper,
+    borderRadius: 16,
   },
 }));
 
@@ -35,7 +36,7 @@ function MobileNav() {
        <ClickAwayListener onClickAway={handleClose}>
       <Button
         size="large"
-        variant="outlined"
+        variant= "contained"
         color="secondary"
         aria-describedby={id} type="button" onClick={handleClick}
       >
@@ -91,7 +92,7 @@ function MobileNav() {
             duration={700}
             onClick={handleClose}
           >
-          Top-<FontAwesomeIcon icon={faChevronUp} size="2x" />
+          <FontAwesomeIcon icon={faArrowUp} size="2x" />
           </Link>
         </MenuItem>
             </div>

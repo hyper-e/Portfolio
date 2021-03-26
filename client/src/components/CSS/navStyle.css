@@ -105,3 +105,10 @@
 .dropdown {
     width: max-content;
 } */
+/* /////////////////////////////////////// */
+
+/* mobile nav  */
+
+a.buttonLink {
+  margin: auto;
+}

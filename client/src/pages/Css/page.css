@@ -195,6 +195,9 @@ div.homeText1 {
   text-decoration: underline;
   cursor: pointer;
 }
+.emailLink:hover {
+  color: #ca3e47;
+}
 .noMatch {
   height: 100vh;
   background-image: linear-gradient(to left, #30475e, #222831);

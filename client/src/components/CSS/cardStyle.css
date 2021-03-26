@@ -41,7 +41,7 @@
     margin-top: 18px;
   }
   .herokuButton {
-    background-color: rgb(107, 64, 121);
+    background-color: #222831;
     color: white;
     border: none;
     padding: 1%;
@@ -59,7 +59,7 @@
           box-shadow: 0 0 0 0px #e8e8e8;
      }
      100% {
-          box-shadow: 0 0 0 25px rgba(100, 13, 199, 0.7);
+          box-shadow: 0 0 0 10px #ca3e47;
      }
 }
   .githubButton {
@@ -79,7 +79,7 @@
           box-shadow: 0 0 0 0px #e8e8e8;
      }
      100% {
-          box-shadow: 0 0 0 25px #ca3e47;
+          box-shadow: 0 0 0 10px #ca3e47;
      }
 }
 

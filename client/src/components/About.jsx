@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Nav from "./Nav";
 import "../components/CSS/navStyle.css"
 
 class HomePage extends Component {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./CSS/navStyle.css";
 import NavSocialLinks from "./NavSocialLinks";
-import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
 
 
