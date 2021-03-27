@@ -6,8 +6,8 @@ import renderPDF from "../components/pdf/Resume2.0.pdf";
 class MobileResume extends Component {
   render() {
     return (
-      <div>
-      <button>button</button>
+      <div id="mobResMain">
+        <nav className="mobileRes"><span className="mobResBack"><a>Back to Home</a></span></nav>
         <Document
           file={renderPDF}
           className="pdF"

@@ -1,5 +1,10 @@
+/* #root {
+  height: 100vh;
+} */
+
 /* styles for the pages folder  */
 /* intro pages css */
+
 
 #intro {
   height: 100vh;
@@ -247,4 +252,24 @@ div.homeText1 {
   .contactLinks {
     justify-content: space-around;
   }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Mobile Resume Page */
+
+#mobResMain {
+  height: 100vh;
+  background-color: #30475e;
+
+}
+.mobileRes {
+  background-color: #222831;
+  height: 3%;
+  color: white;
+}
+.mobResBack {
+  height: 100%;
+  border: #ca3e47 2px;
+  border-radius: 2.5%;
 }
