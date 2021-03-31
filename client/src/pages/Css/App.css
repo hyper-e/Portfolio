@@ -1,34 +1,15 @@
 /* Css styleing for home page in app.js */
 
-
-/* html, body, #root {
-    padding: 0;
-    margin: 0;
+/* media queries for screen changes 
+for anything under 800px */
+body {
     height: 100%;
-  } */
-  
-
-/* media queries for screen changes 
-for anything under 800px */
-
-/* @media screen and (max-width: 800px) {
-    .links{
-     position: absolute;
-     bottom: 0;
-    }
-    .navBar{
-        justify-content: space-around;
-    }
-    .buttonLink:hover {
-        transform: none;
-        color: blue;
-        animation: none;
-        font-size: 28px;
-    }
+    margin: 0;
+    
 }
-/* media queries for screen changes 
-for anything under 800px */
-
+#root {
+    height: 100%;
+}
 @media screen and (max-width: 800px) {
     
     /* Navbar */
@@ -36,15 +17,6 @@ for anything under 800px */
     #deskNav {
         display: none;
     }
-
-    /* #mobileNav {
-        width: 100%;
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    
-    } */
     #mobNav {
         height: 5%;
         width: 100%;
@@ -54,12 +26,10 @@ for anything under 800px */
         position: fixed;
         top: 3%;
     }
- 
     #intro {       
         flex-flow: column-reverse;
         align-items: unset!important;
     }
-
     .introImg {
         margin: 0% 5% 30% 5%;
     }
@@ -104,107 +74,13 @@ for anything under 800px */
         display: none;
     }
     /* resume section */
-    .resume {
-        display: none;
+    .mobResBody {
+        overflow: scroll!important;
     }
+
     /* contact */
     .contactLinks {
         margin-bottom: 20%!important;
     }
     
 }
-
-
-
-/* @media screen and (max-width: 600px) {
-    
-     .homePage{
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        font-size: 12px;
-       
-    } */
-    /* .links {
-        width: 100%;
-        position: relative;
-    }
-    .linkBox {
-        width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: none;
-  margin: 0;
-        
-    }  
-    
-     div.homeText{
-        box-shadow: none;
-        width: 100%;
-        border-radius: 0;
-        margin: none;
-        border: none;
-        padding: 0;
-    }
-    div.homeText1 {
-        box-shadow: none;
-        width: 100%;
-        border-radius: 0;
-        border: none;
-        padding: 0;
-    }
-    .h1Title {
-      width: 100%; 
-       
-    }
-    .buttonLink {
-        height: 3vh;
-        width: 13vw;
-        text-align: center;
-        font-size: 75%;
-    }
-    .buttonLink:hover {
-        transform: none;
-        font-size: 100%;
-    }
-    .seperator {
-        display: none;
-    }
-    .name {
-        display: none;
-        
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        padding: 0;;
-    }
-   .navBar {
-    width: 100%;
-       display: flex;
-        flex-flow: column;
-       
-   }
-   .port2Links {
-       width: 100%
-   }
-   .navBarFix{
-       position: relative;
-   }
-   .cards {
-       border: none;
-       padding: 0;
-   }
-   .portfolio {
-       align-items: unset;
-   }
-   .emailLink {
-       font-size: unset;
-   }
-   #info {
-       justify-content: unset;
-   }
-   } */ 
-   

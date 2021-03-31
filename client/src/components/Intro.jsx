@@ -7,7 +7,8 @@ class Intro extends Component {
         this.state = {
             h_1 : "hidden",
             h_2 : "hidden",
-            h_3 : "hidden"
+            h_3 : "hidden",
+            opacity: 0
         };
     }
 
@@ -15,6 +16,7 @@ componentDidMount() {
     this.pageLoad = [setInterval(
         () => {
             this.setState({h_1: "visible"})
+            this.setState({opacity: 1})
         }, 1500), 
         setInterval(() => {
             this.setState({h_2: "visible"})
@@ -34,7 +36,7 @@ componentWillUnmount() {
 
     render(){
         return(
-            <div id="intro">
+            <div id="intro" style={{opacity: this.state.opacity}}>
             <img className="introImg" src={Image}  alt="EduardoReta" />
             <div className="introDescription">
             <div id="h_1" style={{visibility: this.state.h_1}} className="introPara" ><span>Hi, I'm Eduardo.</span></div>

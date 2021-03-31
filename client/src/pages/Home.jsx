@@ -26,7 +26,6 @@ function Home() {
                         <Intro />
                         <About />
                     {SimpleMediaQuery() ? <MobilePortfolio /> : <Portfolio />}
-                    {SimpleMediaQuery() ? null : <Resume />}
                         <Contact />
                         <Footer />
                     </div>

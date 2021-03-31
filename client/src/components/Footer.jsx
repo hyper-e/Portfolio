@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import NavSocialLinks from "./NavSocialLinks";
 
 import {
@@ -9,10 +9,12 @@ import "./CSS/footer.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 
-function Footer() {
+function Footer(props) {
+  //  const [load, setReload] = useState(false);
     const year = new Date().getFullYear();
     
     const SimpleMediaQuery = () => {
+      
       const matches = useMediaQuery("(min-width:800px)");
       return matches;
     };
@@ -24,10 +26,11 @@ function Footer() {
                    <strong>Copyright &copy; </strong> 2019 - {year}
                  </p>
                  {SimpleMediaQuery() && (
-                   <button
+                   <button style={{display: `${props.styleButton}`}}
                      className="scrollUp"
                      onClick={() => {
                        scroll.scrollToTop();
+                    
                      }}
                    >
                      Back to Top

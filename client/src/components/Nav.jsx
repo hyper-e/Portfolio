@@ -24,11 +24,9 @@ class Nav extends Component {
              <Link to="portfolio" className="buttonLink" smooth={true} delay={400} duration={700}>
                Portfolio
              </Link>
-             
-             <Link to="resume" className="buttonLink" smooth={true} delay={400} duration={700}>
-               Resume
-             </Link>
-            
+
+             <a href="/mobilePDF" className="buttonLink">Resume</a>
+                  
              <Link to="contact" className="buttonLink" smooth={true} delay={400} duration={700}>
               Contact
             </Link>

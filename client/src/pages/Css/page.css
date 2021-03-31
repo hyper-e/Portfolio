@@ -1,22 +1,16 @@
-/* #root {
-  height: 100vh;
-} */
-
 /* styles for the pages folder  */
 /* intro pages css */
-
 
 #intro {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+ 
 }
 
-/* .introImg {
-  height: 68%;
-  width: 22%;
-} */
 .introDescription {
   height: 100vh;
   padding: 5%;
@@ -222,18 +216,10 @@ div.homeText1 {
  display: flex;
  justify-content: center;
  align-items: center;
-  /* display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit; */
 }
 .resumePDF {
   height: 100%;
   overflow: auto;
-  /* margin-top: 6%;
-  overflow: auto;
-  height: 80%; */
 }
 .pdf {
   height: 90%;
@@ -241,7 +227,6 @@ div.homeText1 {
 .resLinks {
   color: rgb(9, 255, 0);
 }
-
 @supports (-ms-ime-align: auto) {
   .links {
     justify-content: space-around;
@@ -259,17 +244,45 @@ div.homeText1 {
 /* Mobile Resume Page */
 
 #mobResMain {
-  height: 100vh;
+  height: 100%;
   background-color: #30475e;
+ 
 
 }
+.mobResBody {
+  overflow: hidden;
+}
 .mobileRes {
+  height: 6vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  transition: background-color 0.1s ease-in ;
+}
+.mobileRes.active {
   background-color: #222831;
-  height: 3%;
-  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
 }
-.mobResBack {
-  height: 100%;
-  border: #ca3e47 2px;
-  border-radius: 2.5%;
+a.mobResBack {
+    margin-left: 15%;
+    text-decoration: none;
+    color: #ca3e47;
+    font-size: large;
+    border: 1px solid;
+    padding: 0.5%;
+    border-radius: 9.5px;
 }
+.react-pdf__Page__canvas {
+  margin: auto;
+  margin-top: 5%;
+}
+.react-pdf__Page__textContent {
+  display: none;
+}
+
+
+/* transition ease and  */

@@ -8,9 +8,6 @@ class Contact extends Component {
       };
 
     resumeLink = () => {
-        const openPDF = () => {
-            window.open("mobilePDF");
-          };
           return (
            
             // <span className="emailLink" onClick={openPDF}>Click for Resume</span>
