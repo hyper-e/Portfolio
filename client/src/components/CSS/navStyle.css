@@ -2,22 +2,27 @@
 .navBar {
   width: 100%;
   display: flex;
-  background-color: #222831;
   z-index: 10;
   position: fixed;
   top: 0;
   justify-content: center;
+  background: transparent;
+  transition: background-color 0.2s ease-in-out ;
+}
+.navBar.active {
+  background-color: #222831;
 }
 .buttonLink {
   display: flex;
   align-items: center;
-  color: #e8e8e8;
+  color: #CA3E47;
   font-size: 120%;
+  text-decoration: none;
 }
 
 .buttonLink:hover {
   transform: scale(1.15, 1.15);
-  color: #CA3E47;
+  color: #e8e8e8;
   cursor: pointer;
 }
 .linkBox {

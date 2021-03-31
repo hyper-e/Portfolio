@@ -4,18 +4,33 @@ import NavSocialLinks from "./NavSocialLinks";
 import { Link } from 'react-scroll';
 
 
+const navActive = () => {
+  if (window.scrollY > 100) {
+    return true;
+  } else {
+    return false;
+  } 
+};
 class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = { matches: window.matchMedia("(min-width: 800px)").matches};
+    this.state = { 
+      matches: window.matchMedia("(min-width: 800px)").matches,
+      sticky: navActive()
+    };
+    
   }
-
+  componentDidMount(){
+    window.addEventListener("scroll", () => {
+      this.setState({sticky: navActive()})
+    })
+  }
   render() {
     return (
       <div id="deskNav">
       {this.state.matches && (
         <nav>
-         <div className="navBar">
+         <div className={this.state.sticky ? "navBar active" : "navBar"}>
            <div className="linkBox">
              <Link to="info" className="buttonLink" smooth={true} delay={400} duration={700}>
                About
