@@ -40,7 +40,7 @@ class Nav extends Component {
                Portfolio
              </Link>
 
-             <a href="/mobilePDF" className="buttonLink">Resume</a>
+             {/* <a href="/mobilePDF" className="buttonLink">Resume</a> */}
                   
              <Link to="contact" className="buttonLink" smooth={true} delay={400} duration={700}>
               Contact

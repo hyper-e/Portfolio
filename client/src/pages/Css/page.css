@@ -147,6 +147,98 @@ div.homeText1 {
 
 /* contact page css */
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.emailForm {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 1.5%;
+  box-shadow: 0 0 0.3em 0.3em #e8e8e8;
+  margin-bottom: 7%;
+}
+.contactForm {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.conName {
+  width: 40%;
+  font-size: 0.6em;
+  margin-left: 3%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: whitesmoke;
+  border-bottom-color: #bababa;
+  text-align: center;
+  outline: none;
+  color: #2980b9;
+}
+.conMessage {
+  height: 20vh;
+  width: 70%;
+  font-size: 1.5em;
+  border-color: #bababa;
+  color: #2980b9;
+  border-radius: 0.5%;
+  margin: 3% 0 3% 5%;
+  outline-color: #00e676;
+
+  
+}
+.conEmail {
+  color: #2980b9;
+  width: 40%;
+  font-size: 0.6em;
+  margin-left: 3%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: whitesmoke;
+  border-bottom-color: #bababa;
+  outline: none;
+  text-align: center;
+}
+.formInfo {
+  color: #2980b9;
+  width: 100%;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: start;
+  align-items: center;
+  margin: 1% 0 1% 0;
+}
+.formIncomplete {
+  border-bottom-color: #ca3e47;
+}
+.messageIncomplete {
+  border-color: #ca3e47;
+}
+.formPara {
+  font-size: 1.5em;
+  color:#30475e;
+}
+.emailFormButton {
+  border: 2px solid;
+  height: 10%;
+  width: 15%;
+  border-radius: 5%;
+  color: #ca3e47;
+  outline-color: #ca3e47;
+  font-size: 1em;
+}
+.emailFormButton:hover {
+  cursor: pointer;
+  background-color: #2980b9;
+  color: white;
+}
 .contact {
   position: relative;
   height: 100vh;
@@ -187,13 +279,14 @@ div.homeText1 {
 
 }
 .emailMessage {
+  font-size: 2em;
   text-align: center;
   color: #e8e8e8;
 }
 .emailLink {
   color: #ca3e47;
   font-family: monospace;
-  font-size: x-large;
+  font-size: 1.5em;
   text-decoration: underline;
   cursor: pointer;
 }

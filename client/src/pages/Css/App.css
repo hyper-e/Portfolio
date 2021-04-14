@@ -82,6 +82,9 @@ body {
     .contactLinks {
         margin-bottom: 20%!important;
     }
+    .emailLink {
+        font-size: 1em!important;
+    }
     
 }
 @media screen and (min-width: 2000px) {

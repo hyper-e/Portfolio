@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Links from "./Links";
+import Email from "./email";
 
 class Contact extends Component {
    
@@ -20,23 +21,18 @@ class Contact extends Component {
         return(
             
             <div className="contact">
-                <div className="centerEmail">
-                <div className="emailMessage">Click my  <strong>Email</strong> 
+            <Email />
+                {/* <div className="centerEmail">
+                <div className="emailMessage">Here is my <strong>Email</strong> 
                 <br />
                 to get in touch.  
-                <br />
-                or
-                <br />
-                Checkout my <strong>Resume</strong>.
                 <br />
                 <br/> 
                 Email: <span className="emailLink" onClick={this.handleEmailClick}>dev.eddie.reta@gmail.com</span>
                 <br />
-                <br />
-                Resume: {this.resumeLink()}
                 </div>
                 </div>
-                <Links linkBox="contactLinks" />
+                <Links linkBox="contactLinks" /> */}
             </div>
         );
     };
