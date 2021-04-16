@@ -6,10 +6,10 @@ import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import{ init } from 'emailjs-com';
-init(Pass().userId);
-console.log(Pass().userId)
 
 function Email() {
+  init(Pass().userId);
+
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
     message: "",
@@ -34,7 +34,7 @@ function Email() {
       user_email: ""
    })
     emailjs
-      .sendForm(Pass().serviceId, Pass().templateId, e.target)
+      .sendForm(Pass().serviceId, Pass().templateId, e.target, init(Pass().userId))
       .then(
         (result) => {
           // console.log(result.text);
