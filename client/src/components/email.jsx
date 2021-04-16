@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import{ init } from 'emailjs-com';
 init(Pass().userId);
+console.log(Pass().userId)
 
 function Email() {
   const [emailInfo, setEmailInfo] = useState({
