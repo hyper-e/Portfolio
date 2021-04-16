@@ -1,3 +1,5 @@
+import {init} from "emailjs-com";
+init(process.env.USER_ID);
 
 function Pass() {
     const keys = {
