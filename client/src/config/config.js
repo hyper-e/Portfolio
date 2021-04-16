@@ -4,7 +4,7 @@ function Pass() {
         
         templateId : (process.env.REACT_APP_TEMPLATE_ID || process.env.TEMPLATE_ID),
         
-        userId : (process.env.REACT_APP_USER_ID || process.env.USER_ID)
+        userId : (process.env.USER_ID || process.env.REACT_APP_USER_ID )
     };
     return keys;
 }
