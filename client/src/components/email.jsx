@@ -6,7 +6,7 @@ import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import{ init } from 'emailjs-com';
-
+init(Pass().userId)
 
 function Email() {
 
