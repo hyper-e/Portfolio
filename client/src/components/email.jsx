@@ -1,3 +1,4 @@
+  /* eslint-env jquery */
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Pass from "../config/config";
@@ -7,8 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import{ init } from 'emailjs-com';
 
+
 function Email() {
-  init(Pass().userId);
 
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
@@ -22,6 +23,21 @@ function Email() {
   });
 
   const emailReady = (e) => {
+    var formData = new FormData(this);
+    formData.append('service_id', Pass().serviceId);
+    formData.append('template_id', Pass().templateId);
+    formData.append('user_id', Pass().userId);
+
+  $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+    type: 'POST',
+    data: formData,
+    contentType: false, // auto-detection
+    processData: false // no need to parse formData to string
+}).done(function() {
+    alert('Your mail is sent!');
+}).fail(function(error) {
+    alert('Oops... ' + JSON.stringify(error));
+});
     console.log("email sent");
     setContactInfo({
       name: false,
@@ -34,7 +50,7 @@ function Email() {
       user_email: ""
    })
     emailjs
-      .sendForm(Pass().serviceId, Pass().templateId, e.target, init(Pass().userId))
+      .sendForm(Pass().serviceId, Pass().templateId, e.target, Pass().userId)
       .then(
         (result) => {
           // console.log(result.text);
