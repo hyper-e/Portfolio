@@ -5,6 +5,8 @@ import Links from "./Links";
 import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import{ init } from 'emailjs-com';
+init(Pass().userId);
 
 function Email() {
   const [emailInfo, setEmailInfo] = useState({
@@ -31,7 +33,7 @@ function Email() {
       user_email: ""
    })
     emailjs
-      .sendForm(Pass().serviceId, Pass().templateId, e.target, Pass().userId)
+      .sendForm(Pass().serviceId, Pass().templateId, e.target)
       .then(
         (result) => {
           // console.log(result.text);
@@ -89,10 +91,6 @@ function Email() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(
-      `${contactInfo.name} \n ${contactInfo.message} \n ${contactInfo.email}`
-    );
-
     if (emailInfo.user_name === "" || emailInfo.message === "" || emailInfo.user_email === "") {
       setContactInfo({
         name: true,
@@ -102,9 +100,6 @@ function Email() {
     } else {
       insertInfo.completeInfo("name", "message", "email");
       emailReady(e);
-      console.log(
-        `${contactInfo.name} \n ${contactInfo.message} \n ${contactInfo.email}`
-      );
     }
   };
 
