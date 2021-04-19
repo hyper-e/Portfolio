@@ -10,13 +10,13 @@ console.log(process.env.USER_ID)
 
 // console.log(s3.accessKeyId)
 
-// function Pass() {
-//     const keys = {
-//         serviceId : process.env.REACT_APP_SERVICE_ID,
-//         templateId : process.env.REACT_APP_TEMPLATE_ID,
-//         userId : process.env.REACT_APP_USER_ID
-//     };
-//     return keys;
-// }
+function Pass() {
+    const keys = {
+        serviceId : process.env.REACT_APP_SERVICE_ID,
+        templateId : process.env.REACT_APP_TEMPLATE_ID,
+        userId : process.env.REACT_APP_USER_ID
+    };
+    return keys;
+}
 
-//export default Pass;
+export default Pass;
