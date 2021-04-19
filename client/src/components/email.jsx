@@ -5,7 +5,7 @@ import Links from "./Links";
 import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-
+console.log(process.env.SERVICE_ID)
 function Email() {
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
