@@ -38,5 +38,6 @@
   },
   "engines": {
     "node": "10.15.2"
-  }
+  },
+  "description": "Portfoilo of Eduardo Reta."
 }
