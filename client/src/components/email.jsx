@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import Pass from "../config/config";
 import Links from "./Links";
 import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,7 +30,7 @@ function Email() {
       user_email: ""
    })
     emailjs
-      .sendForm(Pass().serviceId, Pass().templateId, e.target, Pass().userId)
+      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
       .then(
         (result) => {
           // console.log(result.text);
