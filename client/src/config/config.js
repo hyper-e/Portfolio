@@ -1,18 +1,4 @@
-const axios = require("axios");
-
-axios({
-    method: "get",
-    url: "https://api.heroku.com/apps/eddie-reta/config-vars",
-    headers:{"Accept" : "application/vnd.heroku+json; version=3"},
-})
-.then(function(response) {
-    console.log(response)
-})
-.catch(function(error){
-    console.log("this is the " + error)
-})
-
-
+console.log(process.env.USER_ID)
 
 
 // const aws = require('aws-sdk');cd
