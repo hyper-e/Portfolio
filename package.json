@@ -35,5 +35,8 @@
     "seed": "node scripts/seed.js",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "10.15.2"
   }
 }
