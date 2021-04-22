@@ -1,9 +1,27 @@
-import React, { useState } from "react";
+import React, { useState , useEffect, useDebugValue} from "react";
 import Links from "./Links";
 import emailjs from "emailjs-com";
 import Pass from "../config/config";
 // import{ init } from 'emailjs-com';
 // init("user_mvQp572NHdayaoTqbrMUs")
+import ReCAPTCHA from "react-google-recaptcha";
+
+// useEffect(()=>{
+//   const scriptTag = document.createElement("script");
+//   scriptTag.src = "https://www.google.com/recaptcha/api.js";
+//   scriptTag.setAttribute("async");
+//   scriptTag.setAttribute("defer");
+//   scriptTag.addEventListener("load", () => {
+//     document.body.appendChild(scriptTag);
+//       grecaptcha.render('html_element', {
+//         'sitekey' : '6Ldr87MaAAAAAE0vXzE_14xfU9PyiRO-O2d8RZcn'
+//   })
+// })
+// });
+
+function onChange(value) {
+  console.log("Captcha value:", value);
+}
 
 function Email() {
 
@@ -117,6 +135,8 @@ function Email() {
     return true
   };
 
+
+
   return (
     <div className="emailForm">
     <form className="contactForm" onSubmit={sendEmail}>
@@ -158,6 +178,10 @@ function Email() {
      <strong>Send</strong>
       </button>  
     </form>
+    <ReCAPTCHA
+    sitekey="6Ldr87MaAAAAAE0vXzE_14xfU9PyiRO-O2d8RZcn"
+    onChange={onChange}
+  />
     <Links linkBox="contactLinks" />
     </div>
   );
