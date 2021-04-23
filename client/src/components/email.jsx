@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Links from "./Links";
 import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-console.log(process.env.USER_ID)
+
+
 function Email() {
+  const [emailPass, setKeys] =useState({
+    service: "",
+    template: "",
+    user: "",
+
+  });
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
     message: "",
@@ -15,6 +22,20 @@ function Email() {
     name: false,
     message: false,
     email: false,
+  });
+
+
+  useEffect(()=>{
+    fetch('/api')
+    .then(res => res.json())
+    .then(secret => {
+      setKeys({
+        service: secret.service,
+        template: secret.template,
+        user: secret.user
+      })
+    })
+    .catch(error => console.log(error))
   });
 
   const emailReady = (e) => {
@@ -30,7 +51,7 @@ function Email() {
       user_email: ""
    })
     emailjs
-      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
+      .sendForm(emailPass.service, emailPass.template, e.target, emailPass.user)
       .then(
         (result) => {
           // console.log(result.text);
