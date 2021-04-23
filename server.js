@@ -22,6 +22,9 @@ if (process.env.NODE_ENV === "production") {
 //   }
 // }
 // app.use(cors(corsOptions));
+app.get("/api", (req, res) => {
+  res.json({message: "Message from server!"})
+});
 
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
