@@ -51,7 +51,7 @@ function Email() {
       user_email: ""
    })
     emailjs
-      .sendForm(emailPass.service, emailPass.template, e.target, emailPass.user)
+      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
       .then(
         (result) => {
           // console.log(result.text);
