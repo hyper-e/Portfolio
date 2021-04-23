@@ -16,7 +16,6 @@ class App extends Component {
                         
                     <Switch>
                     <Route exact path={"/"} component={Home} />
-                    <Route exact path={"/mobilePDF"} component={MobileResume} />
                     <Route component={ NoMatch } />
                     </Switch>
                   

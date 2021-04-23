@@ -1,8 +1,16 @@
+// const throng = require('throng');
+
+// const WORKERS = process.env.WEB_CONCURRENCY || 1;
+// const PORT = process.env.PORT || 5001;
+
+// // var WORKERS = process.env.WEB_CONCURRENCY || 1;
+
+// function start() {
 const express = require("express");
+const PORT = process.env.PORT || 5001
 const path = require("path");
-const PORT = process.env.PORT || 5000;
 const app = express();
-const buildPath = path.join(__dirname, './client', 'build');
+// const buildPath = path.join(__dirname, './client', 'build');
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
@@ -33,3 +41,9 @@ app.get("*", function(req, res) {
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
+// };
+
+// throng({ 
+//   workers: WORKERS,
+//   lifetime: Infinity
+// }, start);
