@@ -4,15 +4,11 @@ import Links from "./Links";
 import SendIcon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import axios from "axios";
 
 
 function Email() {
-  const [emailPass, setKeys] =useState({
-    service: "",
-    template: "",
-    user: "",
 
-  });
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
     message: "",
@@ -24,21 +20,8 @@ function Email() {
     email: false,
   });
 
-
-  useEffect(()=>{
-    fetch('/api')
-    .then(res => res.json())
-    .then(secret => {
-      setKeys({
-        service: secret.service,
-        template: secret.template,
-        user: secret.user
-      })
-    })
-    .catch(error => console.log(error))
-  });
-
   const emailReady = (e) => {
+    console.log(e.target)
     console.log("email sent");
     setContactInfo({
       name: false,
@@ -50,17 +33,6 @@ function Email() {
       message: "",
       user_email: ""
    })
-    emailjs
-      .sendForm(emailPass.service, emailPass.template, e.target, emailPass.user)
-      .then(
-        (result) => {
-          // console.log(result.text);
-           console.log(result.status)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   };
 
   const insertInfo = {
@@ -83,36 +55,9 @@ function Email() {
     },
   };
 
-  //   const insertInfo = (x, y, z, active) => {
-  //     const missingInfo = {
-  //       yes: function () {
-  //         setContactInfo((preValue) => {
-  //           return {
-  //             ...preValue,
-  //             [x]: active,
-  //           };
-  //         });
-  //       },
-  //       no: function() {
-  //           setContactInfo((preValue) => {
-  //               return {
-  //                   ...preValue,
-  //                   [x] : active,
-  //                   [y] : active,
-  //                   [z] : active
-  //               }
-  //           })
-  //       }
-  //     };
-  //   };
-
   const sendEmail = (e) => {
     e.preventDefault();
-
-    console.log(
-      `${contactInfo.name} \n ${contactInfo.message} \n ${contactInfo.email}`
-    );
-
+    
     if (emailInfo.user_name === "" || emailInfo.message === "" || emailInfo.user_email === "") {
       setContactInfo({
         name: true,
@@ -121,10 +66,10 @@ function Email() {
       })
     } else {
       insertInfo.completeInfo("name", "message", "email");
-      emailReady(e);
-      console.log(
-        `${contactInfo.name} \n ${contactInfo.message} \n ${contactInfo.email}`
-      );
+
+      axios.post("/", {emailInfo})
+      .then(res => console.log(res))
+      .catch(error => console.log(error));
     }
   };
 
