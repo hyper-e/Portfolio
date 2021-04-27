@@ -211,7 +211,7 @@ div.homeText1 {
   font-size: 2em;
   display: flex;
   flex-direction: row wrap;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin: 1% 0 1% 0;
 }

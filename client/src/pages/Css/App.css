@@ -85,7 +85,13 @@ body {
     .emailLink {
         font-size: 1em!important;
     }
-    
+    .emailForm {
+        height: 70%;
+        width: 100%;
+    }
+    .contactLinks {
+        bottom: -3%;
+    }
 }
 @media screen and (min-width: 2000px) {
     .mobResBody {

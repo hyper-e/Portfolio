@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, MenuItem, Popper, makeStyles, Fade, ClickAwayListener} from "@material-ui/core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import {
   Link
 } from "react-scroll";

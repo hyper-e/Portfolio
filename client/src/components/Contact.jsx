@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Links from "./Links";
 import Email from "./email";
 
 class Contact extends Component {

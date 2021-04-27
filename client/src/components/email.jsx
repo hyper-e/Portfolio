@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Links from "./Links";
-import SendIcon from '@material-ui/core/Icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import axios from "axios";
-
 
 function Email() {
   const keyArr = [];
-  const [secrets, setKeys] = useState({
-    service_id: "",
-    template_id: "",
-    user_id: ""
-  });
+
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
     message: "",
@@ -37,7 +28,6 @@ function Email() {
 
   const emailReady = (e) => {
     e.preventDefault();
-    console.log("email sent");
     setContactInfo({
       name: false,
       message: false,
@@ -48,12 +38,10 @@ function Email() {
       message: "",
       user_email: ""
    });
-   console.log(keyArr[0].service)
    emailjs
    .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
      .then(
        (result) => {
-         // console.log(result.text);
           console.log(result.status)
           console.log("email sent")
        },
@@ -108,10 +96,6 @@ function Email() {
     });
   };
 
-  const activeLine = () => {
-    return true
-  };
-
   return (
     <div className="emailForm">
     <form className="contactForm" onSubmit={sendEmail}>
@@ -124,10 +108,6 @@ function Email() {
         value={emailInfo.user_name}
         placeholder={contactInfo.name ? "Please add Name" : null}
         onChange={handleChange}
-      //  onClick={(e) => {
-      //     e.preventDefault();
-      //     e.target.style.borderBottomColor = "#ca3e47"
-      //   }} 
       /></label>
       <label className="formInfo">Message: </label>
       <textarea
@@ -149,7 +129,6 @@ function Email() {
       />
       </label>
       <button className="emailFormButton" type="submit" value="send">
-      {/* <FontAwesomeIcon  icon={faEnvelope} size="5x" /> */}
      <strong>Send</strong>
       </button>  
     </form>
