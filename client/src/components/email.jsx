@@ -8,7 +8,12 @@ import axios from "axios";
 
 
 function Email() {
-
+  const keyArr = [];
+  const [secrets, setKeys] = useState({
+    service_id: "",
+    template_id: "",
+    user_id: ""
+  });
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
     message: "",
@@ -20,8 +25,18 @@ function Email() {
     email: false,
   });
 
+  useEffect(()=>{
+    async function loadData() {
+      const response = await fetch('/api');
+      // fetch() timeouts at 300 seconds in Chrome
+      const data = await response.json();
+      keyArr.push(data);
+    }
+    loadData();
+  });
+
   const emailReady = (e) => {
-    console.log(e.target)
+    e.preventDefault();
     console.log("email sent");
     setContactInfo({
       name: false,
@@ -32,7 +47,20 @@ function Email() {
       user_name: "",
       message: "",
       user_email: ""
-   })
+   });
+   console.log(keyArr[0].service)
+   emailjs
+   .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
+     .then(
+       (result) => {
+         // console.log(result.text);
+          console.log(result.status)
+          console.log("email sent")
+       },
+       (error) => {
+         console.log(error.text);
+       }
+     );
   };
 
   const insertInfo = {
@@ -66,11 +94,8 @@ function Email() {
       })
     } else {
       insertInfo.completeInfo("name", "message", "email");
-
-      axios.post("/", {emailInfo})
-      .then(res => console.log(res))
-      .catch(error => console.log(error));
-    }
+      emailReady(e);
+   }
   };
 
   const handleChange = (event) => {
@@ -123,7 +148,7 @@ function Email() {
         onChange={handleChange}
       />
       </label>
-      <button className="emailFormButton" type="submit" value="Send">
+      <button className="emailFormButton" type="submit" value="send">
       {/* <FontAwesomeIcon  icon={faEnvelope} size="5x" /> */}
      <strong>Send</strong>
       </button>  
