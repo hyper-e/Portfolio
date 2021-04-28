@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import NodeStack from "./images/NoteStack.jpg";
 import Liri from "./images/Liri.jpg";
-import Gif from "./images/gifs.gif";
 import Dice from "./images/dice.jpg";
 import "./CSS/cardStyle.css";
 
@@ -25,9 +24,6 @@ class ProjectCard extends Component {
     }
     if (this.props.image === "Liri") {
       this.setState({ image: Liri });
-    }
-    if (this.props.image === "Gifs") {
-      this.setState({ image: Gif });
     }
     if (this.props.image === "Dice") {
       this.setState({ image: Dice });

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "../components/CSS/navStyle.css"
+import "../components/CSS/navStyle.css";
+import myPicture from "./images/eddie-clear.png";
 
 class HomePage extends Component {
 
@@ -8,9 +9,10 @@ class HomePage extends Component {
 
                 <div id="info">
                     <div className="homeText">
-                        <h1 className="h1Title">About Me</h1>
+                    <img className="myImg" src={myPicture} alt="Eddie's Picture" />
                         <div id="aboutMe">
-                            <p>
+                        <h1 className="h1Title">About Me</h1>
+                            <p className="aboutPara">
                                 Hi my name is Eduardo Reta. I am a recent graduate from the UNC Full Stack Web Developer Boot Camp and I am eager to begin 
                                 exploring web development opportunities. I have a passion for building front and back end web applications, this can be showcased via my portfolio.
                             </p>

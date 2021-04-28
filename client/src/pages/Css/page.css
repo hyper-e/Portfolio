@@ -4,11 +4,14 @@
 #intro {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   opacity: 0;
   transition: opacity 1s ease;
- 
+  background-image: url("../../components/images/blue-ed.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
 }
 
 .introDescription {
@@ -17,9 +20,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 5%;
 }
-
 .introPara {
   font-family: "Roboto Slab", serif;
   color: #e8e8e8;
@@ -52,13 +55,16 @@
   color: #30475e;
 }
 div.homeText {
+  height: 25%;
   width: 60%;
   background-color: #e8e8e8;
   padding: 2%;
   margin-top: 5%;
   border-radius: 10px;
+  display: flex;
+  flex-flow: row;
 }
-#aboutMe {
+div#aboutMe {
   color: #222831;
   text-indent: 5%;
   line-height: 1.6;
@@ -77,6 +83,9 @@ div.homeText1 {
   justify-content: space-evenly;
   align-items: center;
 }
+.aboutPara {
+  font-size: 1.6em;
+}
 .standOut {
   color: rgb(9, 255, 0);
 }
@@ -93,6 +102,7 @@ div.homeText1 {
 }
 .h1Title {
   text-align: center;
+  color: #30475e;
 }
 .portLinks {
   position: absolute;
@@ -127,7 +137,10 @@ div.homeText1 {
     box-shadow: 0 0 50px 25px #ca3e47;
   }
 }
-
+.introImg {
+  height: 80%;
+  opacity: 0.8;
+}
 /* portfolio page css */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .portfolio {

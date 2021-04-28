@@ -28,7 +28,13 @@ body {
     }
     #intro {       
         flex-flow: column-reverse;
-        align-items: unset!important;
+        align-items: center;
+    }
+    .introDescription {
+        background-color: #30475e;
+        opacity: 0.9;
+        margin-left: 0;
+        align-items: center;
     }
     .introImg {
         margin: 0% 5% 30% 5%;
@@ -37,6 +43,9 @@ body {
         font-size: 55%;
     }
     /* About section */
+    #aboutMe {
+        width: 100%;
+    }
     .homeText {
         width: unset!important;
         margin: 5%;
