@@ -1,11 +1,9 @@
 import React from "react";
 import NavSocialLinks from "./NavSocialLinks";
-
 import {
-
   animateScroll as scroll,
 } from "react-scroll";
-import "./CSS/footer.css";
+import "../Css/footer.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 

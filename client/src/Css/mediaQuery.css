@@ -107,6 +107,9 @@ body {
   .contactLinks {
     bottom: -3%;
   }
+  .card {
+    height: 50%;
+  }
 
   /* /////////////////////////////////////////// */
   /* error link no match page */

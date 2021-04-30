@@ -1,6 +1,15 @@
 [
     {
         "id": 1,
+        "name": "React Portfolio",
+        "image": "ReactThumbnail",
+        "description": "Portfolio created using React.",
+        "technologies": "React, HTML, Javascript, CSS, NODE, GIT BASH, Express.js, EmailJS, Heroku",
+        "link": "https://eddie-reta.herokuapp.com/",
+        "github_link": "https://github.com/Eddie-Reta/Portfolio" 
+    },
+    {
+        "id": 2,
         "name": "Note Stack",
         "image": "NodeStack",
         "imageCredit": "<span>Photo by <a href='https://unsplash.com/@freegraphictoday?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>AbsolutVision</a> on <a href='https://unsplash.com/s/photos/note?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span>",
@@ -10,7 +19,7 @@
         "github_link": "https://github.com/Eddie-Reta/Note_Stack"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Liri",
         "image": "Liri",
         "imageCredit": "<span>Photo by <a href='https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Markus Spiske</a> on <a href='https://unsplash.com/s/photos/javascript?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span>",
@@ -19,13 +28,21 @@
         "github_link": "https://github.com/Eddie-Reta/liri-node-app"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "DiceGame",
         "image": "Dice",
-        "imageCredit": "Dice",
         "description": "PIG(Dice Game) Two player game to reach 100 points first. Raise your bet!!",
         "technologies": "HTML, Javascript, CSS, NODE, GIT BASH,",
         "link": "https://eddie-reta.github.io/DiceGame/",
         "github_link": "https://github.com/Eddie-Reta/DiceGame"
+    },
+    {
+        "id": 5,
+        "name": "bAmazon",
+        "image": "Box",
+        "imageCredit": "Box",
+        "description": "Amazon-like storefront app which takes orders from customers and depletes stock from the store's inventory.",
+        "technologies": "Node.js. Javascript, MySQL",
+        "github_link": "https://github.com/Eddie-Reta/bAmazon"
     }
 ]

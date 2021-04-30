@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import NodeStack from "./images/NoteStack.jpg";
-import Liri from "./images/Liri.jpg";
-import Dice from "./images/dice.jpg";
-import "./CSS/cardStyle.css";
+import ReactThumb from "../images/reactPort (2).png";
+import NodeStack from "../images/NoteStack.jpg";
+import Liri from "../images/Liri.jpg";
+import Dice from "../images/dice.jpg";
+import Box from "../images/box.jpg";
+import "../Css/cardStyle.css";
 
 class ProjectCard extends Component {
   constructor(props) {
@@ -27,6 +29,12 @@ class ProjectCard extends Component {
     }
     if (this.props.image === "Dice") {
       this.setState({ image: Dice });
+    }
+    if (this.props.image === "ReactThumbnail") {
+      this.setState({image: ReactThumb})
+    }
+    if (this.props.image === "Box") {
+      this.setState({image: Box})
     }
   };
 

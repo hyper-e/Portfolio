@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../components/CSS/navStyle.css";
-import myPicture from "./images/myImage.png";
+import ".././Css/navStyle.css";
+import myPicture from "../images/myImage.png";
 
 class HomePage extends Component {
 

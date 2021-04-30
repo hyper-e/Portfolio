@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CSS/navStyle.css";
+import "../Css/navStyle.css";
 import NavSocialLinks from "./NavSocialLinks";
 import { Link } from 'react-scroll';
 

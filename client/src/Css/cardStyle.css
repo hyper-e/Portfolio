@@ -1,7 +1,7 @@
 .card {
     background: #e8e8e8;
     border-radius: 2px;
-    height: fit-content;
+    height: 45%;
     margin: 1rem;
     position: relative;
     width: 325px;
@@ -19,8 +19,9 @@
     background: #222831;
   }
   .card > .img-container > img {
-    width: 65%;
-    height:18vh;
+    width: 85%;
+    height:16vh;
+    padding-top: 3%;
   }
   
   .card > .content {

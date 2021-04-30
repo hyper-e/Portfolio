@@ -1,13 +1,13 @@
 import React from "react";
-import "./Css/page.css";
+import "../Css/style.css";
 import Nav from "../components/Nav";
-import "../components/CSS/navStyle.css";
+import "../Css/navStyle.css";
 import About from "../components/About";
 import { Portfolio, MobilePortfolio } from "../components/Portfolio";
 import Intro from "../components/Intro";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import "../pages/Css/App.css";
+import "../Css/mediaQuery.css";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MobileNav from "../components/MobileNav";
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../components/Nav";
-import DeadLink from "../components/images/dead_link.png";
+import DeadLink from "../images/dead_link.png";
 
 class NoMatch extends Component {
     render() {
