@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../components/CSS/navStyle.css";
-import myPicture from "./images/eddie-clear.png";
+import myPicture from "./images/myImage.png";
 
 class HomePage extends Component {
 
@@ -9,7 +9,7 @@ class HomePage extends Component {
 
                 <div id="info">
                     <div className="homeText">
-                    <img className="myImg" src={myPicture} alt="Eddie's Picture" />
+                    {/* <img className="myImg" src={myPicture} alt="Eddie's Picture" /> */}
                         <div id="aboutMe">
                         <h1 className="h1Title">About Me</h1>
                             <p className="aboutPara">
@@ -32,6 +32,7 @@ class HomePage extends Component {
                         Now a <span className="standOut">Full Stack Web Developer </span> seeking for an oppurtinity to put my newly developed skill into your company and my growth of knowledge.</p> */}
                         </div>
                     </div>
+                    <img className="myImg" src={myPicture} alt="Eddie's Picture" />
                     <div className="homeText1">
                         <h1 className="h1Title">SKILLS</h1>
                             <ul>

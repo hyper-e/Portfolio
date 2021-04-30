@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../components/Nav";
+import DeadLink from "../components/images/dead_link.png";
 
 class NoMatch extends Component {
     render() {
@@ -7,7 +8,9 @@ class NoMatch extends Component {
             <div className="noMatch">
             <Nav />
                 <div className="errorMessage">
-                <h1>404 Sorry!! Page does not exist!!</h1>
+                <a className="errorHomeBtn" href="/">Home</a>
+                <h1 className="errorPara">404 Sorry!! Link does not exist!!</h1>
+                <img id="deadLink" src={DeadLink} alt="deadLink" />
                 </div>
             </div>
         )

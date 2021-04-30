@@ -55,7 +55,6 @@
   color: #30475e;
 }
 div.homeText {
-  height: 25%;
   width: 60%;
   background-color: #e8e8e8;
   padding: 2%;
@@ -82,6 +81,7 @@ div.homeText1 {
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 .aboutPara {
   font-size: 1.6em;
@@ -139,6 +139,13 @@ div.homeText1 {
 }
 .introImg {
   height: 80%;
+  opacity: 0.8;
+}
+.myImg {
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
   opacity: 0.8;
 }
 /* portfolio page css */
@@ -314,6 +321,7 @@ div.homeText1 {
 .errorMessage {
   height: 100vh;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 }
@@ -392,6 +400,13 @@ a.mobResBack {
 .react-pdf__Page__textContent {
   display: none;
 }
-
-
-/* transition ease and  */
+/* /////////////////////////////////////////////////////// */
+/* ERROR 404 Page */
+.errorHomeBtn {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  border: 2px solid #ca3e47;
+  border-radius: 4%;
+  padding: 1%  3% 1% 3%;
+}

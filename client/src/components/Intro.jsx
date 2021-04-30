@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Image from "./images/eddie-clear.png";
+
 
 class Intro extends Component {
     constructor(props) {

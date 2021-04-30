@@ -3,107 +3,122 @@
 /* media queries for screen changes 
 for anything under 800px */
 body {
-    height: 100%;
-    margin: 0;
-    
+  height: 100%;
+  margin: 0;
 }
 #root {
-    height: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 800px) {
-    
-    /* Navbar */
+  /* Navbar */
 
-    #deskNav {
-        display: none;
-    }
-    #mobNav {
-        height: 5%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        z-index: 50;
-        position: fixed;
-        top: 3%;
-    }
-    #intro {       
-        flex-flow: column-reverse;
-        align-items: center;
-    }
-    .introDescription {
-        background-color: #30475e;
-        opacity: 0.9;
-        margin-left: 0;
-        align-items: center;
-    }
-    .introImg {
-        margin: 0% 5% 30% 5%;
-    }
-    .introPara > span {
-        font-size: 55%;
-    }
-    /* About section */
-    #aboutMe {
-        width: 100%;
-    }
-    .homeText {
-        width: unset!important;
-        margin: 5%;
-    }
-    #info {
-        height: 100vh!important;
-    }
-    #info > .homeText1 {
-        width: unset;
-        margin: 5%;
-        justify-content: space-evenly;
-    }
-    .homeText1 > ul {
-        justify-content: space-between;
-        padding: 0;
-    }
-    .buttonLink {
-        color: #ca3e47;
-    }
-    /* portfolio */
-    #portfolioCarousel {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .portfolioLR {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .cards > .card {
-        display: none;
-    }
-    /* resume section */
-    .mobResBody {
-        overflow: scroll!important;
-    }
+  #deskNav {
+    display: none;
+  }
+  #mobNav {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    position: fixed;
+    top: 3%;
+  }
+  #intro {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .introDescription {
+    background-color: #30475e;
+    opacity: 0.9;
+    margin-left: 0;
+    align-items: center;
+  }
+  .introImg {
+    margin: 0% 5% 30% 5%;
+  }
+  .introPara > span {
+    font-size: 55%;
+  }
+  /* About section */
+  #aboutMe {
+    width: 100%;
+  }
+  div.homeText {
+    width: 85%;
+    flex-flow: column;
+    margin: 5%;
+  }
+  #info {
+    height: 100vh !important;
+  }
+  #info > .homeText1 {
+    width: unset;
+    margin: 5%;
+    justify-content: space-evenly;
+  }
+  .homeText1 > ul {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .buttonLink {
+    color: #ca3e47;
+  }
+  .myImg {
+    display: none;
+  }
+  .aboutPara {
+    font-size: 1em;
+  }
 
-    /* contact */
-    .contactLinks {
-        margin-bottom: 20%!important;
-    }
-    .emailLink {
-        font-size: 1em!important;
-    }
-    .emailForm {
-        height: 70%;
-        width: 100%;
-    }
-    .contactLinks {
-        bottom: -3%;
-    }
+  /* portfolio */
+  #portfolioCarousel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolioLR {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cards > .card {
+    display: none;
+  }
+  /* resume section */
+  .mobResBody {
+    overflow: scroll !important;
+  }
+
+  /* contact */
+  .contactLinks {
+    margin-bottom: 20% !important;
+  }
+  .emailLink {
+    font-size: 1em !important;
+  }
+  .emailForm {
+    height: 70%;
+    width: 100%;
+  }
+  .contactLinks {
+    bottom: -3%;
+  }
+
+  /* /////////////////////////////////////////// */
+  /* error link no match page */
+  .errorPara {
+    margin: 10%;
+  }
+  #deadLink {
+    height: 30%;
+  }
 }
 @media screen and (min-width: 2000px) {
-    .mobResBody {
-        height: 100vh;
-    }
+  .mobResBody {
+    height: 100vh;
+  }
 }
