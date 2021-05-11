@@ -120,8 +120,13 @@ body {
     height: 30%;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1440px) {
   .mobResBody {
     height: 100vh;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .card {
+    height: 36%;
   }
 }
