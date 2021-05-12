@@ -16,8 +16,8 @@
   display: flex;
   align-items: center;
   color: #CA3E47;
-  font-size: 120%;
   text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .buttonLink:hover {

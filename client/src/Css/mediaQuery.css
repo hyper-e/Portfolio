@@ -17,29 +17,48 @@ body {
   }
   #mobNav {
     height: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     z-index: 50;
     position: fixed;
     top: 3%;
+    right: 5%;
   }
   #intro {
     flex-flow: column-reverse;
     align-items: center;
+    background-size: 100%;
+    background-position: 1% 90%;
   }
   .introDescription {
     background-color: #30475e;
     opacity: 0.9;
-    margin-left: 0;
+    margin-right: 0;
     align-items: center;
+    width: 100%;
+    padding: 0 0 65% 0;
+    font-size: 1.5em;
   }
   .introImg {
     margin: 0% 5% 30% 5%;
   }
-  .introPara > span {
-    font-size: 55%;
+  .introPara {
+   display: flex; 
+   flex-flow: column;
+   justify-content: space-around;
+   font-size: 1em;
   }
+  /* .introPara > span {
+    font-size: 1.3em;
+  } */
+#h_1 {
+  text-indent: 0%;
+}
+#h2 {
+  height: 0;
+}
+.fullName {
+  font-size: 1.6em;
+}
+
   /* About section */
   #aboutMe {
     width: 100%;

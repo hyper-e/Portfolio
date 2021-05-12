@@ -8,10 +8,10 @@
   justify-content: center;  
   transition: opacity 1s ease;
   background-image: url("../images/hello.png");
-  background-size: contain; 
+  background-size: 80VH; 
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
+  background-position: 100% 80%;
 }
 
 .introDescription {
