@@ -32,7 +32,7 @@ class HomePage extends Component {
                         Now a <span className="standOut">Full Stack Web Developer </span> seeking for an oppurtinity to put my newly developed skill into your company and my growth of knowledge.</p> */}
                         </div>
                     </div>
-                    <img className="myImg" src={myPicture} alt="Eddie's Picture" />
+                    {/* <img className="myImg" src={myPicture} alt="Eddie's Picture" /> */}
                     <div className="homeText1">
                         <h1 className="h1Title">SKILLS</h1>
                             <ul>

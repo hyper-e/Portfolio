@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, MenuItem, Popper, makeStyles, Fade, ClickAwayListener} from "@material-ui/core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   Link
 } from "react-scroll";
@@ -40,7 +40,7 @@ function MobileNav() {
         color="secondary"
         aria-describedby={id} type="button" onClick={handleClick}
       >
-      Menu
+     <FontAwesomeIcon icon={faBars} size="2x" />
       </Button>
       </ClickAwayListener>
       <Popper id={id} open={open} anchorEl={anchorEl} transition>
