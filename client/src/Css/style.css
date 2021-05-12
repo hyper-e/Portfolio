@@ -5,9 +5,9 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  opacity: 0;
+  justify-content: center;  
   transition: opacity 1s ease;
-  background-image: url("../images/blue-ed.png");
+  background-image: url("../images/hello.png");
   background-size: contain; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,31 +18,40 @@
   height: 100vh;
   padding: 5%;
   display: flex;
+  margin-right: 15%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 5%;
 }
 .introPara {
   font-family: "Roboto Slab", serif;
   color: #e8e8e8;
   font-size: 30px;
-  opacity: 1;
-  transition: visibility 5s linear 0s, opacity 300ms;
+ 
+  /* transition: visibility 5s linear 0s, opacity 300ms; */
   text-align: center;
 }
 #h_1 {
-  height: 15%;
+  height: 11%;
   text-align: center;
+  text-indent: 2em
   
 }
 #h_2 {
   height: 15%;
   text-align: center;
 }
-#h_3 {
+/* #h_3 {
   height: 15%;
   text-align: center;
+} */
+@keyframes colorName {
+  from {color: #e8e8e8}
+  to {color: #ca3e47}
+}
+.fullName {
+  font-size: 1.5em;
+  color: #ca3e47;
 }
 /* ////////////////////////////////////////////////////////////////////////////// */
 /* About page styles. */

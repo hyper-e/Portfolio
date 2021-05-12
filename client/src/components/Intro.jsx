@@ -1,29 +1,21 @@
+import transitions from "@material-ui/core/styles/transitions";
 import React, {Component} from "react";
+import ello from "../images/hello.png";
 
 
 class Intro extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            h_1 : "hidden",
-            h_2 : "hidden",
-            h_3 : "hidden",
-            opacity: 0
+            colorChange: ""
         };
     }
 
 componentDidMount() {
     this.pageLoad = [setInterval(
         () => {
-            this.setState({h_1: "visible"})
-            this.setState({opacity: 1})
-        }, 1500), 
-        setInterval(() => {
-            this.setState({h_2: "visible"})
-        }, 2500),
-        setInterval(()=> {
-            this.setState({h_3: "visible"})
-        },3500)
+            this.setState({colorChange:"#ca3e47"})
+        }, 1500)
     ]
                 
         return () => clearInterval(this.pageLoad)
@@ -36,12 +28,14 @@ componentWillUnmount() {
 
     render(){
         return(
-            <div id="intro" style={{opacity: this.state.opacity}}>
+            <div id="intro">
             <div className="introDescription">
-            <div id="h_1" style={{visibility: this.state.h_1}} className="introPara" ><span>Hi, I'm Eduardo.</span></div>
-            <div id="h_2" style={{visibility: this.state.h_2}} className="introPara"><span>A Full Stack web developer in the triangle area.</span></div>
-            <div id="h_3" style={{visibility: this.state.h_3}} className="introPara"><span>Ready to bring your website and ideas online.</span></div>
+            <div id="h_1" className="introPara" >Hello, I'm <span className="fullName">Eduardo Reta Jr.</span></div>
+            <div id="h_2" className="introPara">I'm a <span>full stack web developer.</span></div>
+            
+            {/* <div id="h_3" style={{visibility: this.state.h_3}} className="introPara"><span>Ready to bring your website and ideas online.</span></div> */}
             </div>
+            {/* <img src={Hello} /> */}
             </div> 
         )
     }
