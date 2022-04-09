@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "repository": "https://github.com/hyper-e/Portfolio.git",
-  "author": "<er031991@gmail.com>",
+  "author": "<dev.eddie.reta@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^6.0.2",
@@ -28,17 +28,17 @@
     "throng": "^5.0.0"
   },
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore './client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
+    "start:dev": "concurrently \"nodemon --ignore './client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn run start",
+    "install": "cd client && yarn install",
     "seed": "node scripts/seed.js",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm install --only-dev --no-shrinkwrap && npm run build"
+    "build": "cd client && yarn run build",
+    "heroku-postbuild": "cd client && yarn install --only-dev --no-shrinkwrap && yarn run build"
   },
   "engines": {
-    "node": "14.15.3"
+    "node": "16.1.0"
   },
   "description": "Portfoilo of Eduardo Reta."
 }

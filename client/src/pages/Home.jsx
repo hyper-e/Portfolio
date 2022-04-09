@@ -23,10 +23,10 @@ function Home() {
                     <div className="homePage">
                     {SimpleMediaQuery() ? <MobileNav /> : <Nav />}
                         <Intro />
-                        <About />
+                         <About />
                     {SimpleMediaQuery() ? <MobilePortfolio /> : <Portfolio />}
-                        <Contact />
-                        <Footer />
+                        <Contact /> 
+                        <Footer /> 
                     </div>
                 )
 };

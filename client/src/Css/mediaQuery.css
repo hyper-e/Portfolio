@@ -144,8 +144,8 @@ body {
     height: 100vh;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2160px) {
   .card {
-    height: 36%;
+    height: 500px;
   }
 }

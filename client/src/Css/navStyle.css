@@ -7,10 +7,11 @@
   top: 0;
   justify-content: center;
   background: transparent;
-  transition: background-color 0.2s ease-in-out ;
+  transition: background-color 0.1s ease-in ;
 }
 .navBar.active {
   background-color: #222831;
+  height: 7vh;
 }
 .buttonLink {
   display: flex;
