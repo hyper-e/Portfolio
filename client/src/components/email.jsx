@@ -44,7 +44,7 @@ function Email() {
       user_email: ""
    });
    emailjs
-   .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
+   .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID )
   //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
      .then(
        (result) => {
