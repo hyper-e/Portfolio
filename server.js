@@ -3,13 +3,13 @@ const PORT = process.env.PORT || 5001
 const path = require("path");
 const app = express();
 
- app.get("/api", function(req,res) {
-  res.send({
-    service: process.env.SERVICE_ID,
-    template: process.env.TEMPLATE_ID,
-    user: process.env.USER_ID
-  })
-})
+//  app.get("/api", function(req,res) {
+//   res.send({
+//     service: process.env.SERVICE_ID,
+//     template: process.env.TEMPLATE_ID,
+//     user: process.env.USER_ID
+//   })
+// })
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

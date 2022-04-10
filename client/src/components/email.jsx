@@ -16,15 +16,15 @@ function Email() {
     email: false,
   });
 
-  useEffect(()=>{
-    async function loadData() {
-      const response = await fetch('/api');
-      // fetch() timeouts at 300 seconds in Chrome
-      const data = await response.json();
-      keyArr.push(data);
-    }
-    loadData();
-  });
+  // useEffect(()=>{
+  //   async function loadData() {
+  //     const response = await fetch('/api');
+  //     // fetch() timeouts at 300 seconds in Chrome
+  //     const data = await response.json();
+  //     keyArr.push(data);
+  //   }
+  //   loadData();
+  // });
 
   const emailReady = (e) => {
     e.preventDefault();
@@ -39,7 +39,8 @@ function Email() {
       user_email: ""
    });
    emailjs
-   .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
+   .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
+  //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
      .then(
        (result) => {
           console.log(result.status)
