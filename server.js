@@ -3,6 +3,7 @@ const PORT = process.env.PORT || 5001
 const path = require("path");
 const app = express();
 
+console.log(process.env.USER_ID + " var")
 //  app.get("/api", function(req,res) {
 //   res.send({
 //     service: process.env.SERVICE_ID,
