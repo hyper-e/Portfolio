@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Links from "./Links";
 
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
+
+
 function Email() {
   const keyArr = [];
 
