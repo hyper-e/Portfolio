@@ -2,15 +2,7 @@ const express = require("express");
 const PORT = process.env.PORT || 5001
 const path = require("path");
 const app = express();
-
-console.log(process.env.USER_ID + " var")
-//  app.get("/api", function(req,res) {
-//   res.send({
-//     service: process.env.SERVICE_ID,
-//     template: process.env.TEMPLATE_ID,
-//     user: process.env.USER_ID
-//   })
-// })
+import emailjs from "emailjs-com";
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -20,6 +12,18 @@ if (process.env.NODE_ENV === "production") {
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
+
+app.post("/api", (req, res) => {
+  console.log(req);
+})
+
+//email api
+// emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.USER_ID)
+// .then((result) => {
+//     console.log(result.text);
+// }, (error) => {
+//     console.log(error.text);
+// });
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

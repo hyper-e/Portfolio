@@ -6,8 +6,6 @@ const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const USER_ID = process.env.REACT_APP_USER_ID;
 
-console.log(USER_ID);
-console.log(process.env.USER_ID)
 
 function Email() {
   const keyArr = [];
@@ -45,18 +43,34 @@ function Email() {
       message: "",
       user_email: ""
    });
-   emailjs
-   .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, process.env.USER_ID)
-  //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
-     .then(
-       (result) => {
-          console.log(result.status)
-          console.log("email sent")
-       },
-       (error) => {
-         console.log(error.text);
-       }
-     );
+   
+  const user_name = e.target.user_name.value;
+  const message = e.target.message.value;
+  const user_email = e.target.user_email.value;
+  
+  const data = {user_name, message, user_email} ;
+
+   const options = {
+     method: "POST",
+     headers: {
+       'Content-Type': 'application/json'
+     },
+     body: JSON.stringify(data)
+   }
+   //send form to server
+   fetch("/api", options);
+  //  emailjs
+  //  .sendForm(SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
+  // //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
+  //    .then(
+  //      (result) => {
+  //         console.log(result.status)
+  //         console.log("email sent")
+  //      },
+  //      (error) => {
+  //        console.log(error.text);
+  //      }
+  //    );
   };
 
   const insertInfo = {
