@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Links from "./Links";
+import { response } from "express";
+import res from "express/lib/response";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -58,7 +60,13 @@ function Email() {
      body: JSON.stringify(data)
    }
    //send form to server
-   fetch("/api", options);
+   fetch("/api", options)
+   .then(response => response.status)
+   .then(err => {
+     if (err) {
+       Error(err);
+     }
+   })
   //  emailjs
   //  .sendForm(SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
   // //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
