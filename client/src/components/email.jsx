@@ -52,9 +52,9 @@ function Email() {
     const options = {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     };
     //send form to server
     fetch("/api", options)
@@ -64,6 +64,7 @@ function Email() {
           Error(err);
         }
       });
+
     //  emailjs
     //  .sendForm(SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
     // //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
