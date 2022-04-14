@@ -2,14 +2,14 @@ const express = require("express");
 const PORT = process.env.PORT || 5001
 const path = require("path");
 const app = express();
-const emailjs = require("emailjs-com");
+//const emailjs = require("emailjs-com");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
 
-app.use(express.json({limit: "1mb"}));
+//app.use(express.json({limit: "1mb"}));
 
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
@@ -29,8 +29,7 @@ emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, templateParams)
     }, function(error) {
        console.log('FAILED...', error);
     });
-// });
-})
+});
 
 //email api
 // emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.USER_ID)
