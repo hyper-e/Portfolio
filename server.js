@@ -15,7 +15,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
-app.post("/api", (req, res) => {
+app.post("https://eduardo-reta.herokuapp.com/api", (req, res) => {
   //email api
   console.log(req.body.user_name)
 
