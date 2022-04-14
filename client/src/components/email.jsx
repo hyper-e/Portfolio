@@ -57,7 +57,7 @@ function Email() {
       body: JSON.stringify(data)
     };
     //send form to server
-    fetch("/api", options)
+    fetch("/", options)
       .then((response) => response.status)
       .then((err) => {
         if (err) {
