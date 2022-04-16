@@ -22,7 +22,6 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start"
   },
-  "proxy": "http://localhost:5001 || https://eduardo-reta.herokuapp.com",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Links from "./Links";
+import axios from "axios";
 
 // const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 // const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -49,21 +50,41 @@ function Email() {
 
     const data = { user_name, message, user_email };
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    };
+    // try{
+    //   const options = {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json"
+    //     },
+    //     body: JSON.stringify(data)
+    //   };
+    //   const apiData = await fetch("/api", {options});
+    //   console.log(apiData);
+    // }catch(err){
+    //   console.log(Error(err));
+    // }
+    axios.post("http://localhost:5000/api", data)
+    .then(response => response.status)
+    .catch(err => {
+      if (err) {
+        console.log(Error(err));
+      }
+    })
+    // const options = {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(data)
+    // };
     //send form to server
-    fetch("/", options)
-      .then((response) => response.status)
-      .then((err) => {
-        if (err) {
-          Error(err);
-        }
-      });
+    // fetch("http://localhost:5000/api", options)
+    //   .then((response) => response.status)
+    //   .then((err) => {
+    //     if (err) {
+    //       Error(err);
+    //     }
+    //   });
 
     //  emailjs
     //  .sendForm(SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
