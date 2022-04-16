@@ -18,7 +18,18 @@ app.use(express.json({limit: "1mb"}));
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.post("/api", (req, res) => {
-  console.log(req.body)
+//  email api
+  const templateParams = {
+    user_name: req.body.user_name,
+    message: req.body.message,
+    user_email: req.body.user_email
+  };
+ emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+      if (error) { console.log('FAILED...', error) };
+    });
 })
 
 app.get("*", function(req, res) {
