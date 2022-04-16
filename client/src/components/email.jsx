@@ -63,28 +63,28 @@ function Email() {
     // }catch(err){
     //   console.log(Error(err));
     // }
-    axios.post("/api", data)
-    .then(response => response.status)
-    .catch(err => {
-      if (err) {
-        console.log(Error(err));
-      }
-    })
-    // const options = {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify(data)
-    // };
-    //send form to server
-    // fetch("http://localhost:5000/api", options)
-    //   .then((response) => response.status)
-    //   .then((err) => {
-    //     if (err) {
-    //       Error(err);
-    //     }
-    //   });
+    // axios.post("/api", data)
+    // .then(response => response.status)
+    // .catch(err => {
+    //   if (err) {
+    //     console.log(Error(err));
+    //   }
+    // })
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    };
+   // send form to server
+    fetch("/api", options)
+      .then((response) => response.status)
+      .then((err) => {
+        if (err) {
+          Error(err);
+        }
+      });
 
     //  emailjs
     //  .sendForm(SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )

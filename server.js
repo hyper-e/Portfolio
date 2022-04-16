@@ -19,6 +19,7 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.post("/api", (req, res) => {
 //  email api
+console.log(req.body)
   const templateParams = {
     user_name: req.body.user_name,
     message: req.body.message,
