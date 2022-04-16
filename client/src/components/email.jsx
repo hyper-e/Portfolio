@@ -63,7 +63,7 @@ function Email() {
     // }catch(err){
     //   console.log(Error(err));
     // }
-    axios.post("https://eduardo-reta.herokuapp.com/api", data)
+    axios.post("/api", data)
     .then(response => response.status)
     .catch(err => {
       if (err) {
