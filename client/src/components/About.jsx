@@ -34,7 +34,7 @@ class HomePage extends Component {
                     </div>
                     {/* <img className="myImg" src={myPicture} alt="Eddie's Picture" /> */}
                     <div className="homeText1">
-                        <h1 className="h1Title">SKILLS</h1>
+                        <h1 className="h1Title"> Technologies worked with:</h1>
                             <ul>
 
                                 <li className="skill">HTML</li>

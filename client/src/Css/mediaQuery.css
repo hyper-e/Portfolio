@@ -138,6 +138,9 @@ body {
   #deadLink {
     height: 30%;
   }
+  #resumeLink {
+    visibility: hidden;
+  }
 }
 @media screen and (min-width: 1440px) {
   .mobResBody {

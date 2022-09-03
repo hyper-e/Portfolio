@@ -84,8 +84,21 @@ function MobileNav() {
           </Link>
         </MenuItem>
         <MenuItem>
+          <Link
+            className="buttonLink"
+            smooth={true}
+            delay={400}
+            duration={700}
+            onClick={() => {
+              window.open("https://docs.google.com/document/d/1KJIBTB8b65RRJXyyalPKKB1rJcQ7EWmnmslmASjEdF8/edit?usp=sharing", "_blank");
+              handleClose();
+            }}
+          >
+            Resume
+          </Link>
+        </MenuItem>
+        <MenuItem>
         <Link
-            to="intro"
             className="buttonLink"
             smooth={true}
             delay={400}

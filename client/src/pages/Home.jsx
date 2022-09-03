@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import "../Css/mediaQuery.css";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MobileNav from "../components/MobileNav";
+import ResumeLink from "../components/ResumeLink.jsx";
 
 
 function SimpleMediaQuery() {
@@ -25,6 +26,7 @@ function Home() {
                         <Intro />
                          <About />
                     {SimpleMediaQuery() ? <MobilePortfolio /> : <Portfolio />}
+                        <ResumeLink />
                         <Contact /> 
                         <Footer /> 
                     </div>
