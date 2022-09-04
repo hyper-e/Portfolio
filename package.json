@@ -40,7 +40,7 @@
     "heroku-postbuild": "cd client && yarn install --only-dev --no-shrinkwrap && yarn run build"
   },
   "engines": {
-    "node": "16.17.0"
+    "node": "^16.17.0 || ^16.15.0"
   },
   "description": "Portfoilo of Eduardo Reta."
 }
