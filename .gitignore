@@ -7,8 +7,6 @@ node_modules
 # testing
 /client/coverage
 
-# production
-/client/build
 
 # misc
 .DS_Store
@@ -25,4 +23,4 @@ yarn-error.log*
 npm-debug.log
 .DS_Store
 /*.env
-.vercel
+
