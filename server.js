@@ -7,7 +7,7 @@ const emailjs = require("emailjs-com");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client/build")));
+  app.use(express.static(path.join(__dirname, "./client/build/index.html")));
 }
 
 app.use(cors());
@@ -34,7 +34,7 @@ console.log(req.body)
 })
 
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 })
 // app
 // .get("*", function(req, res) {
