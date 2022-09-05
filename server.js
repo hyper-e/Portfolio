@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json({limit: "1mb"}));
 
 // Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static(path.join(__dirname, './client/build')));
 
 app.post("/api", (req, res) => {
 //  email api
@@ -34,7 +34,9 @@ console.log(req.body)
 })
 
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(
+    path.join(__dirname, "./client/build/index.html")
+    );
 })
 // app
 // .get("*", function(req, res) {
