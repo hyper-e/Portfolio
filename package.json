@@ -39,8 +39,5 @@
     "build": "cd client && yarn install && yarn run build",
     "heroku-postbuild": "cd client && yarn install --only-dev --no-shrinkwrap && yarn run build"
   },
-  "engines": {
-    "node": "^16.17.0"
-  },
   "description": "Portfoilo of Eduardo Reta."
 }
