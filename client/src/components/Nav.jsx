@@ -11,20 +11,37 @@ const navActive = () => {
     return false;
   } 
 };
+
+const windowHeight = window.matchMedia("(min-width: 800px)")
+
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      matches: window.matchMedia("(min-width: 800px)").matches,
+      matches: windowHeight.matches,
       sticky: navActive()
     };
-    
+      window.addEventListener("scroll", () => {
+        this.setState({sticky: navActive()})});
+
   }
-  componentDidMount(){
-    window.addEventListener("scroll", () => {
-      this.setState({sticky: navActive()})
-    })
-  }
+  
+  // componentDidMount(){
+  //   this._isMounted = true;
+  //   if (this._isMounted) {
+    //  window.addEventListener("scroll", () => {
+    //     this.setState({sticky: navActive()})});
+  //   }
+  // }
+  // componentWillUnmount() {
+  //   this._isMounted = false;
+  // }
+
+  // unMountScroll(e) {
+  //   const controller = new AbortController();
+  //   controller.abort();
+  // }
+
   render() {
     return (
       <div id="deskNav">
@@ -40,8 +57,6 @@ class Nav extends Component {
                Portfolio
              </Link>
 
-             {/* <a href="/mobilePDF" className="buttonLink">Resume</a> */}
-                  
              <Link to="contact" className="buttonLink" smooth={true} delay={400} duration={700}>
               Contact
             </Link>

@@ -7,7 +7,7 @@ class HomePage extends Component {
     render() {
         return (
 
-                <div id="info">
+                <div id="info" name="info">
                     <div className="homeText">
                     {/* <img className="myImg" src={myPicture} alt="Eddie's Picture" /> */}
                         <div id="aboutMe">

@@ -460,3 +460,11 @@ a.mobResBack {
       background-position: 100%;
   }
 }
+
+/* Mobile page nav */
+.mobileMenuColl {
+  border: '1px solid';
+  padding: spacing(0.5);
+  background-color: white ;
+  border-radius: 16px;
+}

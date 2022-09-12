@@ -1,4 +1,4 @@
-import transitions from "@material-ui/core/styles/transitions";
+// import transitions from "@material-ui/core/styles/transitions";
 import React, {Component} from "react";
 import ello from "../images/hello.png";
 

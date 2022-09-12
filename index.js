@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname, './client/build')));
 //     });
 // })
 
-app.get("*", function(req, res) {
+app.get("*", function(_, res) {
   res.sendFile(
     path.join(__dirname, "./client/build/index.html"),
     function (err) {
@@ -80,3 +80,5 @@ app.get("*", function(req, res) {
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
+
+module.exports = app;

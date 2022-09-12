@@ -79,7 +79,7 @@ function MobilePortfolio () {
     }
   
     return (
-        <div id="portfolioCarousel">
+        <div id="portfolioCarousel" name="portfolioCarousel">
               {cardDisplay[card]}
               <div className="portfolioLR">
               <div onClick={leftClick} style={{color: "white"}}><FontAwesomeIcon icon={faChevronCircleLeft} size="3x" /></div>

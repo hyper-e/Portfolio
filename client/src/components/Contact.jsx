@@ -19,7 +19,7 @@ class Contact extends Component {
     render() {
         return(
             
-            <div className="contact">
+            <div className="contact" name="contact">
             <Email />
                 {/* <div className="centerEmail">
                 <div className="emailMessage">Here is my <strong>Email</strong> 
