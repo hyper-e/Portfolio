@@ -5,8 +5,24 @@ import { faArrowUp, faBars } from "@fortawesome/free-solid-svg-icons";
 import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll'
 import "../Css/style.css"
-import Box from '@mui/material/Box';
-  
+
+///////////
+//Menu item for resume code just in case I decide to added.
+/* <MenuItem>
+<Link
+  className="buttonLink"
+  smooth={true}
+  delay={400}
+  duration={700}
+  onClick={() => {
+    window.open("https://docs.google.com/document/d/1KJIBTB8b65RRJXyyalPKKB1rJcQ7EWmnmslmASjEdF8/edit?usp=sharing", "_blank");
+    handleClose();
+  }}
+>
+  Resume
+</Link>
+</MenuItem> */
+//////
 function MobileNav() {
     const [open, setOpen] = useState(false);
     const [anchorEl, setAnchorEl] = useState(null);
@@ -29,16 +45,17 @@ function MobileNav() {
   
     return (
       <div id="mobNav">
-      /* <ClickAwayListener onClickAway={handleClose}>
-     <Button
-       size="large"
-       variant= "contained"
-       color="secondary"
-       aria-describedby={id} type="button" onClick={handleClick}
-     >
-    <FontAwesomeIcon icon={faBars} size="2x" />
-     </Button>
-     </ClickAwayListener>
+        <ClickAwayListener onClickAway={handleClose}>
+          <Button
+            size="large"
+            variant= "contained"
+            color="secondary"
+            aria-describedby={id} type="button" onClick={handleClick}
+            style={{backgroundColor: "#ca3e47"}}
+          >
+            <FontAwesomeIcon icon={faBars} size="2x" />
+          </Button>
+        </ClickAwayListener>
      <Popper id={id} open={open} anchorEl={anchorEl} transition>
      {({ TransitionProps }) => (
          <Fade {...TransitionProps} timeout={350}>
@@ -79,20 +96,6 @@ function MobileNav() {
            Contact
          </Link>
        </MenuItem>
-       {/* <MenuItem>
-         <Link
-           className="buttonLink"
-           smooth={true}
-           delay={400}
-           duration={700}
-           onClick={() => {
-             window.open("https://docs.google.com/document/d/1KJIBTB8b65RRJXyyalPKKB1rJcQ7EWmnmslmASjEdF8/edit?usp=sharing", "_blank");
-             handleClose();
-           }}
-         >
-           Resume
-         </Link>
-       </MenuItem> */}
        <MenuItem>
          <FontAwesomeIcon className="buttonLink" icon={faArrowUp} size="2x" onClick={scrollTop}/>
        </MenuItem>

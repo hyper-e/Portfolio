@@ -17,7 +17,7 @@ function Home() {
     const width = window.innerWidth;
     useEffect(() => {
         InitialScreen();       
-    },[]);
+    });
    const InitialScreen = () => {
     if (width < 800) {
         setMobileBoolean(true);

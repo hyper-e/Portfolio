@@ -40,7 +40,7 @@ class ProjectCard extends Component {
 
   missingLink = () => {
     var link = this.props.link;
-    if (link != undefined || link != null) {
+    if (link !== undefined || link !== null) {
       this.setState({ links: true });
     }
   };

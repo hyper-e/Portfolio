@@ -34,10 +34,9 @@
 
 .scrollUp {
     height: 80%;
-    width: 10%;
+    width: 15%;
     position: absolute;
     right: 10%;
-    margin-top: 0.3%;
     border: 1px solid #CA3E47;
     border-radius: 6px;
 }
