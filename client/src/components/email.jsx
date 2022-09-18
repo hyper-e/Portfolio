@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-
+import React, { useState, useRef } from "react";
 import Links from "./Links";
+import emailjs from "emailjs-com";
 
 
-// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-// const USER_ID = process.env.REACT_APP_USER_ID;
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID || process.env.SERVICE_ID; 
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID || process.env.TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID || process.env.USER_ID;
 
-function Email() {  
-  // const keyArr = [];
-
+ function Email() {  
+  const form = useRef();
   const [emailInfo, setEmailInfo] = useState({
     user_name: "",
     message: "",
@@ -21,18 +20,16 @@ function Email() {
     email: false,
   });
 
-  // useEffect(()=>{
-  //   async function loadData() {
-  //     const response = await fetch('/api');
-  //     // fetch() timeouts at 300 seconds in Chrome
-  //     const data = await response.json();
-  //     keyArr.push(data);
-  //   }
-  //   loadData();
-  // });
-
   const emailReady = (e) => {
     e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+      .then((result) => {
+          console.log(`Status: ${result.status} \n Status: ${result.text} \n Message: Thank you for reaching out!`);
+      }, (error) => {
+          console.log(error.text);
+      });
+
     setContactInfo({
       name: false,
       message: false,
@@ -43,61 +40,6 @@ function Email() {
       message: "",
       user_email: "",
     });
-
-    const user_name = e.target.user_name.value;
-    const message = e.target.message.value;
-    const user_email = e.target.user_email.value;
-
-    const data = { user_name, message, user_email };
-
-    // try{
-    //   const options = {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json"
-    //     },
-    //     body: JSON.stringify(data)
-    //   };
-    //   const apiData = await fetch("/api", {options});
-    //   console.log(apiData);
-    // }catch(err){
-    //   console.log(Error(err));
-    // }
-    // axios.post("/api", data)
-    // .then(response => response.status)
-    // .catch(err => {
-    //   if (err) {
-    //     console.log(Error(err));
-    //   }
-    // })
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    };
-   // send form to server
-    fetch("/api", options)
-      .then((response) => response.status)
-      .then((err) => {
-        if (err) {
-          Error(err);
-        }
-      });
-
-    //  emailjs
-    //  .sendForm(SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID )
-    // //  .sendForm(keyArr[0].service, keyArr[0].template, e.target, keyArr[0].user)
-    //    .then(
-    //      (result) => {
-    //         console.log(result.status)
-    //         console.log("email sent")
-    //      },
-    //      (error) => {
-    //        console.log(error.text);
-    //      }
-    //    );
   };
 
   const insertInfo = {
@@ -122,7 +64,6 @@ function Email() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     if (
       emailInfo.user_name === "" ||
       emailInfo.message === "" ||
@@ -151,7 +92,7 @@ function Email() {
 
   return (
     <div className="emailForm">
-      <form className="contactForm" onSubmit={sendEmail}>
+      <form ref={form} className="contactForm" onSubmit={sendEmail}>
         <p className="formPara">Fill out the form to get in contact.</p>
         <label className="formInfo">
           Name:
