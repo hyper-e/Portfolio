@@ -160,11 +160,11 @@ div.homeText1 {
 /* portfolio page css */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .portfolio {
-  height: 100vh;
   background-color: #30475e;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5%;
 }
 .cards {
   height:100%;
@@ -172,6 +172,10 @@ div.homeText1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.emailPlaceholder {
+  text-align: center;
+  color: #e8e8e8;
 }
 
 /* contact page css */
