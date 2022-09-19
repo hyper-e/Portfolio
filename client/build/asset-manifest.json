@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6c1222ae.chunk.css",
+    "main.js": "/static/js/main.962eb07d.chunk.js",
+    "main.js.map": "/static/js/main.962eb07d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c30954c7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c30954c7.js.map",
+    "static/js/2.5b9d6eb9.chunk.js": "/static/js/2.5b9d6eb9.chunk.js",
+    "static/js/2.5b9d6eb9.chunk.js.map": "/static/js/2.5b9d6eb9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6c1222ae.chunk.css.map": "/static/css/main.6c1222ae.chunk.css.map",
+    "static/js/2.5b9d6eb9.chunk.js.LICENSE.txt": "/static/js/2.5b9d6eb9.chunk.js.LICENSE.txt",
+    "static/media/Liri.ff43389a.jpg": "/static/media/Liri.ff43389a.jpg",
+    "static/media/NoteStack.02a31ca1.jpg": "/static/media/NoteStack.02a31ca1.jpg",
+    "static/media/box.2717a179.jpg": "/static/media/box.2717a179.jpg",
+    "static/media/dead_link.8381ef01.png": "/static/media/dead_link.8381ef01.png",
+    "static/media/dice.31637a99.jpg": "/static/media/dice.31637a99.jpg",
+    "static/media/style.css": "/static/media/hello.48afb867.png",
+    "static/media/reactPort (2).e8aea952.png": "/static/media/reactPort (2).e8aea952.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c30954c7.js",
+    "static/js/2.5b9d6eb9.chunk.js",
+    "static/css/main.6c1222ae.chunk.css",
+    "static/js/main.962eb07d.chunk.js"
+  ]
+}
